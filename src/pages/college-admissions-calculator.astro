@@ -1,0 +1,275 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import AdmissionsCalculator from '../components/admissions/AdmissionsCalculator.tsx';
+import { CONCORDANCE } from '../components/admissions/calc';
+import { SITE } from '../config';
+import { faqLd, webAppLd } from '../lib/schema';
+
+const title = `College Admissions Calculator: Your Chances | ${SITE.name}`;
+const description =
+  'Free college admissions calculator. Enter your SAT or ACT, GPA and each college’s acceptance rate and score range to see your Reach, Target and Likely schools.';
+const updated = '2026-10-31';
+
+const SOURCES = {
+  scorecard: 'https://collegescorecard.ed.gov',
+  cds: 'https://commondataset.org',
+  concordance: 'https://www.act.org/content/dam/act/unsecured/documents/ACT-SAT-Concordance-Tables.pdf',
+};
+
+const faqs = [
+  {
+    q: 'What is a college admissions calculator?',
+    a: 'A college admissions calculator compares your test score and GPA with a college’s acceptance rate and the scores of its admitted students, and estimates whether that college is a Reach, Target or Likely school for you.',
+  },
+  {
+    q: 'How accurate are college admissions calculators?',
+    a: 'They are useful for building a balanced list, but they cannot predict a decision. Colleges also read essays, recommendations and activities, and consider each applicant’s background, so two students with the same numbers can get different results.',
+  },
+  {
+    q: 'What does the middle 50% SAT range mean?',
+    a: 'It is the range between the 25th and 75th percentile scores of a college’s enrolled first-year students. A quarter of those students scored at or below the 25th percentile number, and a quarter scored at or above the 75th percentile number.',
+  },
+  {
+    q: 'Can I use the calculator if I am applying test-optional?',
+    a: 'Yes. Choose "No test score". The result then uses the acceptance rate, your GPA and your self-assessment, so treat it as a rougher guide. At test-optional colleges, published score ranges also skew high, because students with lower scores often do not submit them.',
+  },
+  {
+    q: 'Is a college with a 10% acceptance rate a reach for everyone?',
+    a: 'Yes. When a college admits fewer than about 15% of applicants, it turns away many students with perfect grades and scores, so it is a reach no matter how strong your numbers are.',
+  },
+  {
+    q: 'How many colleges should I apply to?',
+    a: 'Many counselors suggest about 8 to 12 colleges, with a mix of Reach, Target and Likely schools. Include at least two Likely colleges that you would be happy to attend and could afford.',
+  },
+  {
+    q: 'Should I enter a weighted or unweighted GPA?',
+    a: 'Enter your unweighted GPA on a 4.0 scale. If your school does not use GPA, as is common outside the US, leave the field blank. Colleges read international transcripts in the context of your school’s grading system.',
+  },
+  {
+    q: 'How do I convert an ACT score to an SAT score?',
+    a: 'Use the official 2018 ACT/SAT concordance table. For example, an ACT composite of 30 corresponds to an SAT total of 1370. The full table is on this page.',
+  },
+  {
+    q: 'Does applying early decision improve my chances?',
+    a: 'Many colleges admit a higher share of early decision applicants than regular decision applicants. Part of that gap comes from who applies early, such as recruited athletes, and early decision is binding, so apply early only to a college you would definitely attend.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} College Admissions Calculator`,
+    url: new URL('/college-admissions-calculator', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['how-it-works', 'How this college admissions calculator works'],
+  ['find-numbers', 'Where to find a college’s acceptance rate and score range'],
+  ['reach-target-likely', 'Reach, Target and Likely colleges'],
+  ['rules', 'How the result is worked out'],
+  ['act-to-sat', 'ACT to SAT conversion table'],
+  ['balanced-list', 'How to build a balanced college list'],
+  ['beyond-numbers', 'What the calculator cannot measure'],
+  ['international', 'Applying from India or another country'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'College Admissions Calculator', href: '/college-admissions-calculator' }]} />
+
+    <div class="page-head">
+      <h1>College Admissions Calculator</h1>
+      <p class="lead">
+        Estimate your chances at US colleges. Enter your SAT or ACT score and GPA, add each college with its acceptance
+        rate and middle 50% score range, and see which are Reach, Target or Likely for you. It is free, with no sign-up.
+      </p>
+    </div>
+
+    <AdmissionsCalculator client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          {toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}
+        </ol>
+      </nav>
+
+      <h2 id="how-it-works">How this college admissions calculator works</h2>
+      <p>
+        Every college publishes two numbers that tell you most of what a calculator can know: the share of applicants it
+        admits, and the test scores of the students it enrolls. This calculator puts your score next to each college’s
+        middle 50% range, takes the acceptance rate into account, and then adjusts for your GPA and the rest of your
+        application.
+      </p>
+      <p>
+        You enter the college numbers yourself, so you can use any college in the US and always work with the latest
+        figures. The rules behind every result are shown <a href="#rules">further down this page</a>, so you can see exactly
+        why a college came out as it did.
+      </p>
+      <ol>
+        <li>Choose SAT, ACT or No test score, and enter your score and unweighted GPA.</li>
+        <li>Rate the rest of your application honestly: course rigor, essays, activities and recommendations.</li>
+        <li>Add each college with its acceptance rate and its 25th and 75th percentile scores.</li>
+        <li>Press Calculate to see each college’s result and advice on the balance of your list.</li>
+      </ol>
+
+      <h2 id="find-numbers">Where to find a college’s acceptance rate and score range</h2>
+      <ul>
+        <li>
+          <strong>College Scorecard.</strong> The US Department of Education’s <a href={SOURCES.scorecard} rel="noopener" target="_blank">College Scorecard</a>
+          lists the acceptance rate and the SAT and ACT ranges for most colleges.
+        </li>
+        <li>
+          <strong>The college’s Common Data Set.</strong> Most colleges publish a <a href={SOURCES.cds} rel="noopener" target="_blank">Common Data Set</a>
+          each year. Section C1 gives the number of applicants and admits, and section C9 gives the 25th and 75th percentile
+          SAT and ACT scores of enrolled first-year students.
+        </li>
+        <li>
+          <strong>The admissions website.</strong> Many colleges post a class profile with the same figures.
+        </li>
+      </ul>
+      <p>
+        Use the most recent year you can find, and the same year for both numbers. If a college is test-optional, remember
+        that its published range only includes students who chose to submit scores, so it tends to be higher than the range
+        of all admitted students.
+      </p>
+
+      <h2 id="reach-target-likely">Reach, Target and Likely colleges</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Result</th><th scope="col">What it usually means</th><th scope="col">How many to include</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-reach">Reach</span></td>
+              <td>Admission is unlikely, either because your numbers are below the typical admitted student or because the college admits very few applicants.</td>
+              <td>A few, for the colleges you would most love to attend.</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-moderate">Target</span></td>
+              <td>Your numbers are close to those of typical admitted students. You have a real chance, but no guarantee.</td>
+              <td>The core of your list.</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-safe">Likely</span></td>
+              <td>Your numbers are comfortably above those of typical admitted students at a college that admits many applicants. Some counselors call these safety schools.</td>
+              <td>At least two that you would be happy to attend and could afford.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="rules">How the result is worked out</h2>
+      <p>
+        First, the acceptance rate puts the college in a selectivity group. Then your score is placed against the college’s
+        middle 50% range, and the table below gives the starting result.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <caption>Starting result by acceptance rate and where your score falls</caption>
+          <thead>
+            <tr>
+              <th scope="col">Acceptance rate</th>
+              <th scope="col">At or above 75th</th>
+              <th scope="col">Upper half</th>
+              <th scope="col">Lower half</th>
+              <th scope="col">A little below 25th</th>
+              <th scope="col">Well below 25th</th>
+              <th scope="col">No score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Under 15%</th><td>Reach</td><td>Reach</td><td>Reach</td><td>Reach</td><td>Reach</td><td>Reach</td></tr>
+            <tr><th scope="row">15% to 29%</th><td>Target</td><td>Reach</td><td>Reach</td><td>Reach</td><td>Reach</td><td>Reach</td></tr>
+            <tr><th scope="row">30% to 59%</th><td>Likely</td><td>Target</td><td>Target</td><td>Reach</td><td>Reach</td><td>Target</td></tr>
+            <tr><th scope="row">60% or more</th><td>Likely</td><td>Likely</td><td>Likely</td><td>Target</td><td>Reach</td><td>Likely</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The starting result is then adjusted by one step at a time:</p>
+      <ul>
+        <li>A GPA below 3.0 lowers the result by one step.</li>
+        <li>A rest of application that is weaker than most applicants lowers it by one step, and an outstanding one raises it by one step.</li>
+        <li>Colleges under 15% always stay Reach, and colleges from 15% to 29% are never shown as Likely.</li>
+      </ul>
+      <p>
+        "A little below" means within half the width of the middle 50% range under the 25th percentile. ACT scores and ranges
+        are converted to the SAT scale with the official concordance table below before they are compared.
+      </p>
+
+      <h2 id="act-to-sat">ACT to SAT conversion table</h2>
+      <p>
+        ACT and the College Board publish one official table for comparing the two tests: the
+        <a href={SOURCES.concordance} rel="noopener" target="_blank">2018 ACT/SAT concordance</a>. The single SAT score is the one
+        to use when you need one number, and the range shows the SAT scores that correspond to each ACT composite.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <caption>ACT composite to SAT total (2018 ACT/SAT concordance, Table A2)</caption>
+          <thead>
+            <tr><th scope="col" class="num">ACT composite</th><th scope="col" class="num">SAT total</th><th scope="col" class="num">SAT range</th></tr>
+          </thead>
+          <tbody>
+            {CONCORDANCE.map(([act, sat, low, high]) => (
+              <tr><td class="num">{act}</td><td class="num">{sat.toLocaleString('en-US')}</td><td class="num">{low.toLocaleString('en-US')}–{high.toLocaleString('en-US')}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="balanced-list">How to build a balanced college list</h2>
+      <ul>
+        <li><strong>Aim for about 8 to 12 colleges.</strong> That is enough to give you choices without spreading your essays too thin.</li>
+        <li><strong>Mix the three groups.</strong> A common shape is a few Reach colleges, a solid group of Target colleges and at least two Likely colleges.</li>
+        <li><strong>Check the cost early.</strong> Every college that takes part in US federal student aid must have a net price calculator on its website. Use it before you call a college a safety.</li>
+        <li><strong>Only add colleges you would attend.</strong> A Likely college you would not enjoy is not really a safety.</li>
+        <li><strong>Look at the major, not just the college.</strong> Some universities admit to engineering, computer science or nursing separately, and those programs can be much more selective than the overall rate.</li>
+      </ul>
+
+      <h2 id="beyond-numbers">What the calculator cannot measure</h2>
+      <p>Most selective colleges review applications holistically. Numbers open the door, but other things decide many cases:</p>
+      <ul>
+        <li>The rigor of your courses, such as AP, IB or honors classes, and your grade trend.</li>
+        <li>Your essays and what they show about you.</li>
+        <li>Teacher and counselor recommendations.</li>
+        <li>Activities, leadership, work and family responsibilities.</li>
+        <li>Institutional priorities, such as recruited athletes, first-generation students, geography or legacy status.</li>
+        <li>When you apply. Early decision and early action rates can differ from regular decision.</li>
+      </ul>
+      <p>That is why the calculator gives a Reach, Target or Likely result instead of an exact percentage.</p>
+
+      <h2 id="international">Applying from India or another country</h2>
+      <ul>
+        <li><strong>Admission rates are often lower</strong> for international applicants than the overall rate a college publishes, especially at highly selective colleges.</li>
+        <li><strong>Financial aid can affect admission.</strong> Many colleges are need-aware for international students, which means asking for aid can be considered in the decision. Check each college’s policy.</li>
+        <li><strong>You usually do not need to convert your marks.</strong> Colleges read your transcript in the context of your board and school. Leave the GPA field blank if your school does not use one.</li>
+        <li><strong>English tests</strong> such as TOEFL, IELTS or Duolingo may be required. Check each college’s requirements.</li>
+      </ul>
+      <p>
+        Also applying to colleges in India through JEE Main? Use our <a href="/jee-main-college-predictor">JEE Main college predictor</a>
+        to see which NITs, IIITs and GFTIs match your rank.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'College Scorecard', href: SOURCES.scorecard },
+          { label: 'the Common Data Set', href: SOURCES.cds },
+          { label: 'the 2018 ACT/SAT concordance', href: SOURCES.concordance },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

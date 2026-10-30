@@ -3,18 +3,27 @@ import { SITE, OFFICIAL } from '../config';
 
 interface Props {
   updated: string;
+  sources?: { label: string; href: string }[];
 }
-const { updated } = Astro.props;
+
+const defaultSources = [
+  { label: 'JoSAA', href: OFFICIAL.josaa },
+  { label: 'JEE Main', href: OFFICIAL.jeeMain },
+  { label: 'CSAB', href: OFFICIAL.csab },
+];
+const { updated, sources = defaultSources } = Astro.props;
 const label = new Date(updated + 'T00:00:00Z').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 ---
 
 <aside class="author-box">
   <p><strong>Written by {SITE.authorName}.</strong></p>
   <p>
-    Dates, rules and process steps are checked against the official
-    <a href={OFFICIAL.josaa} rel="noopener" target="_blank">JoSAA</a>,
-    <a href={OFFICIAL.jeeMain} rel="noopener" target="_blank">JEE Main</a> and
-    <a href={OFFICIAL.csab} rel="noopener" target="_blank">CSAB</a> websites.
+    Facts, rules and figures are checked against{' '}
+    {sources.map((s, i) => (
+      <>
+        <a href={s.href} rel="noopener" target="_blank">{s.label}</a>{i < sources.length - 2 ? ', ' : i === sources.length - 2 ? ' and ' : ''}
+      </>
+    ))}.
     Last updated <time datetime={updated}>{label}</time>.
   </p>
 </aside>

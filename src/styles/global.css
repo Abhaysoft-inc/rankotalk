@@ -210,6 +210,18 @@ caption { text-align: left; color: var(--color-muted); font-size: .875rem; paddi
 .results-filter { margin-bottom: 1rem; max-width: 20rem; }
 .disclaimer { font-size: .875rem; color: var(--color-muted); margin-top: 1rem; line-height: 1.5; }
 
+/* Multi-part forms */
+.tool fieldset { border: 1px solid var(--color-border); border-radius: 4px; background: var(--color-bg); padding: 1rem; margin: 0 0 1rem; }
+.tool legend { font-size: 1rem; font-weight: 600; padding: 0 .25rem; }
+.radio-row { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+.radio-row label { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; font-size: 1rem; cursor: pointer; }
+.radio-row input { width: 1.125rem; height: 1.125rem; accent-color: var(--color-accent); }
+.row-actions { display: flex; justify-content: flex-end; margin-top: .5rem; }
+.btn-link { min-height: 44px; padding: 0; background: none; border: 0; color: var(--color-accent); font: inherit; font-size: .9375rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.btn-link:hover { color: var(--color-accent-hover); }
+.advice { list-style: disc; padding-left: 1.25rem; margin-top: 1rem; font-size: 1rem; }
+.advice li { margin-top: .25rem; }
+
 /* Tags */
 .tag { display: inline-block; font-size: .8125rem; font-weight: 600; padding: .1rem .5rem; border-radius: 2px; line-height: 1.5; }
 .tag-safe { color: var(--color-safe); background: var(--color-safe-bg); }

@@ -366,3 +366,19 @@ Check every text/background pair for a contrast ratio of at least 4.5:1 (WCAG AA
 - **Open:** competition end date and how it's judged (rank position? traffic?)
 - **Open:** final site name and domain
 - **Open:** who writes and reviews content (named author for E-E-A-T)
+
+---
+
+## 13. Second keyword: "college admissions calculator"
+
+Keyword difficulty is about 0 (Ahrefs). The #1 result (CounselMore) is a thin page of about 40 words of body copy. PrepScholar ranks with a long article, but its calculator lives on separate school pages.
+
+Our page is `/college-admissions-calculator`: a working calculator plus the full explanation on one URL.
+
+- **No college database.** Students enter each college's acceptance rate and 25th/75th percentile SAT or ACT scores from College Scorecard or the Common Data Set, so nothing on our side can be wrong or out of date.
+- **Transparent rules.** Selectivity band × score position, then GPA and application-strength adjustments. The full rule table is on the page, and the logic is tested in `src/components/admissions/calc.test.ts`.
+- **List balance advice.** Count of Reach, Target and Likely, and what to add.
+- **Official 2018 ACT/SAT concordance table** (Table A2, checked against ACT's PDF). This also targets "ACT to SAT conversion".
+- **A section for international and Indian applicants** that links to the JEE predictor.
+
+Possible upgrade: a college search that fills in the numbers automatically from the College Scorecard API (free API key from api.data.gov).

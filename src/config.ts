@@ -19,6 +19,7 @@ export const OFFICIAL = {
 export const NAV = [
   { href: '/jee-main-college-predictor', label: 'College Predictor' },
   { href: '/jee-main-percentile-vs-rank', label: 'Percentile vs Rank' },
+  { href: '/college-admissions-calculator', label: 'Admissions Calculator' },
   { href: '/guides', label: 'Guides' },
   { href: '/about', label: 'About' },
 ] as const;

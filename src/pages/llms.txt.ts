@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ site }) => {
   const lines = [
     `# ${SITE.name}`,
     '',
-    `> ${SITE.name} is an independent, free website for JEE Main students in India. It offers a college predictor for NITs, IIITs and GFTIs, a percentile to rank calculator, and plain-language guides to JoSAA counselling. No login is needed.`,
+    `> ${SITE.name} is an independent, free website for JEE Main students in India. It offers a college predictor for NITs, IIITs and GFTIs, a percentile to rank calculator, a college admissions calculator for US colleges, and plain-language guides to JoSAA counselling. No login is needed.`,
     '',
     'Notes for readers and tools:',
     '- Predictions are estimates based on past closing ranks. They are not official allotments.',
@@ -20,6 +20,7 @@ export const GET: APIRoute = async ({ site }) => {
     '## Tools',
     `- [JEE Main College Predictor](${abs('/jee-main-college-predictor')}): enter rank, category, gender and home state to see Safe, Moderate and Reach options at NITs, IIITs and GFTIs.`,
     `- [JEE Main Percentile vs Rank Calculator](${abs('/jee-main-percentile-vs-rank')}): convert an NTA percentile to an approximate rank, or a rank to a percentile, with the formula explained.`,
+    `- [College Admissions Calculator](${abs('/college-admissions-calculator')}): for US college applicants. Compares SAT or ACT, GPA and each college's acceptance rate and middle 50% score range to sort colleges into Reach, Target and Likely, with the rules and the official 2018 ACT/SAT concordance table shown on the page.`,
     '',
     '## Guides',
     ...guides.map((g) => `- [${g.data.title}](${abs(`/guides/${g.id}`)}): ${g.data.description}`),
