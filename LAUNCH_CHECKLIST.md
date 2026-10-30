@@ -15,13 +15,13 @@ Nothing should go live until every item in **Gate** is done.
 ## Vercel
 
 - [ ] Import the GitHub repo. Framework preset: Astro. Build command `npm run build`, output `dist`.
-- [ ] Add `SITE_URL` (and the optional `PUBLIC_GOOGLE_SITE_VERIFICATION` / `PUBLIC_BING_SITE_VERIFICATION`, see `.env.example`).
+- [ ] Add `SITE_URL` and `PUBLIC_GOOGLE_SITE_VERIFICATION` (and the optional `PUBLIC_BING_SITE_VERIFICATION`), see `.env.example`. `.env` is not committed, so these must be set in Vercel too. Redeploy after adding them, because they are read at build time.
 - [ ] **Turn on Web Analytics:** Project, Analytics tab, Enable. The `<Analytics />` component is already in `src/layouts/Base.astro`; data only appears on Vercel deployments after you enable it.
 - [ ] Add the domain, and redirect `www` to the bare domain (or the reverse) in Domains settings.
 
 ## After the first deploy
 
-- [ ] Google Search Console: add the property, verify it, submit `https://<domain>/sitemap-index.xml`, and use URL Inspection to request indexing for `/jee-main-college-predictor`.
+- [ ] Google Search Console: add the property, click Verify (the tag only works once the site is live on that domain), submit `https://<domain>/sitemap-index.xml`, and use URL Inspection to request indexing for `/jee-main-college-predictor`.
 - [ ] Bing Webmaster Tools: import the site from Search Console.
 - [ ] Run `SITE_URL=https://<domain> npm run indexnow` (the key file is in `public/`).
 - [ ] Run Lighthouse on the hub page on mobile. Target 95 or more.

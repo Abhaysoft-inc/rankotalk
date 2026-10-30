@@ -8,8 +8,7 @@ export const SITE = {
   hubUpdated: '2026-10-31',
   // Confirm before launch (see LAUNCH_CHECKLIST.md).
   email: 'contact@rankotalk.com',
-  authorName: 'RankOtalk Editorial Team',
-} as const;
+  authorName: 'Abhay Vishwakarma',} as const;
 
 export const OFFICIAL = {
   josaa: 'https://josaa.nic.in',
