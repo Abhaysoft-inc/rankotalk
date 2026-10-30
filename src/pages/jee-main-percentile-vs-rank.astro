@@ -1,0 +1,132 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import PercentileCalculator from '../components/PercentileCalculator.tsx';
+import { SITE, OFFICIAL } from '../config';
+import { faqLd, webAppLd } from '../lib/schema';
+import { percentileToRank } from '../lib/percentile';
+
+const title = `JEE Main Percentile vs Rank Calculator | ${SITE.name}`;
+const description =
+  'Convert your JEE Main percentile to an expected rank, or a rank to a percentile. Includes the formula, a worked example and a reference table.';
+
+const EXAMPLE_CANDIDATES = 1_200_000;
+const percentiles = [99.9, 99.5, 99, 98, 97, 95, 90, 85, 80, 75, 70];
+const rows = percentiles.map((p) => ({ p, rank: percentileToRank(p, EXAMPLE_CANDIDATES) }));
+
+const faqs = [
+  {
+    q: 'How do I convert JEE Main percentile to rank?',
+    a: 'Subtract your percentile from 100, divide by 100, and multiply by the number of candidates who appeared. For example, 97.5 percentile with 12,00,000 candidates gives (100 − 97.5) ÷ 100 × 12,00,000 = 30,000.',
+  },
+  {
+    q: 'Is the JEE Main NTA score the same as marks?',
+    a: 'No. The NTA score is a percentile between 0 and 100. It shows the share of candidates in your session who scored equal to or less than you, not the share of marks you got.',
+  },
+  {
+    q: 'Why is my actual rank different from the calculator?',
+    a: 'NTA calculates percentiles session by session and publishes the final rank list itself. Candidates with equal scores are separated using tie-break rules, and the number of candidates differs every year. The calculator gives a close estimate, not the official rank.',
+  },
+  {
+    q: 'How many candidates should I enter?',
+    a: 'Use the number of candidates who appeared, as given in the NTA result notice for your year. If you do not have it yet, 12,00,000 is a round figure you can use to get a rough idea.',
+  },
+  {
+    q: 'Can I use the estimated rank in the college predictor?',
+    a: 'Yes. Enter the estimated rank in the JEE Main college predictor to see likely colleges, then check again once your official rank is out.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} JEE Main Percentile vs Rank Calculator`,
+    url: new URL('/jee-main-percentile-vs-rank', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Percentile vs Rank', href: '/jee-main-percentile-vs-rank' }]} />
+
+    <div class="page-head">
+      <h1>JEE Main Percentile vs Rank Calculator</h1>
+      <p class="lead">
+        Type your NTA percentile to get an expected rank, or type a rank to see the percentile it matches. Then take the
+        rank to the <a href="/jee-main-college-predictor">JEE Main college predictor</a>.
+      </p>
+    </div>
+
+    <PercentileCalculator client:visible />
+
+    <div class="article prose">
+      <h2 id="what-is-percentile">What the JEE Main percentile means</h2>
+      <p>
+        The JEE Main score that NTA publishes is a percentile, not a marks total. A percentile of 97.5 means that 97.5% of
+        the candidates in your session scored equal to or less than you. NTA works this out separately for each session and
+        shift, so that a harder or easier shift does not help or hurt anyone, and your final score is based on the sessions
+        you appeared in. Check the NTA information bulletin for the exact rule that applies to your year.
+      </p>
+
+      <h2 id="formula">The formula</h2>
+      <p>If about N candidates appeared, the number of candidates who scored higher than you is the share above your percentile.</p>
+      <div class="callout">
+        <p><strong>Approximate rank = (100 − percentile) ÷ 100 × N</strong></p>
+        <p><strong>Approximate percentile = (N − rank) ÷ N × 100</strong></p>
+      </div>
+      <p>
+        <strong>Worked example.</strong> You score 97.5 percentile and about 12,00,000 candidates appeared. The share above
+        you is 2.5%, and 2.5% of 12,00,000 is 30,000. So your expected rank is close to 30,000.
+      </p>
+
+      <h2 id="table">Percentile to rank reference table</h2>
+      <p>
+        This table applies the formula for {EXAMPLE_CANDIDATES.toLocaleString('en-IN')} candidates. It is an example to
+        show the scale, not a record of any year. Use the calculator above with the real number for your year.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <caption>Expected rank if {EXAMPLE_CANDIDATES.toLocaleString('en-IN')} candidates appear</caption>
+          <thead>
+            <tr><th scope="col" class="num">Percentile</th><th scope="col" class="num">Expected rank (about)</th></tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr>
+                <td class="num">{r.p}</td>
+                <td class="num">{r.rank.toLocaleString('en-IN')}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="differences">Why your official rank can be different</h2>
+      <ul>
+        <li><strong>Tie-breaks.</strong> Many candidates share the same score, and NTA uses its tie-break rules to separate them.</li>
+        <li><strong>The number of candidates.</strong> The count changes every year, so the same percentile can map to a different rank.</li>
+        <li><strong>Session and shift effects.</strong> NTA calculates percentiles within each session, and the final rank list combines them.</li>
+        <li><strong>Category ranks.</strong> Your category rank (EWS, OBC-NCL, SC, ST) is a separate list and is much smaller than your CRL rank. This calculator estimates the CRL rank only.</li>
+      </ul>
+
+      <h2 id="next">What to do with your estimated rank</h2>
+      <ol>
+        <li>Enter the rank in the <a href="/jee-main-college-predictor">college predictor</a> along with your category, gender and home state.</li>
+        <li>Read how to order your options in the <a href="/guides/josaa-choice-filling-strategy">choice filling guide</a>.</li>
+        <li>Once NTA publishes your official rank, run the predictor again with that number.</li>
+      </ol>
+      <p>
+        For the official score card and rank list, go to the <a href={OFFICIAL.jeeMain} rel="noopener" target="_blank">JEE Main website</a>.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox updated={SITE.hubUpdated} />
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,64 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import { SITE } from '../../config';
+import { articleLd } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const { title: heading, description, published, updated } = entry.data;
+
+const branded = `${heading} | ${SITE.name}`;
+const title = branded.length <= 60 ? branded : heading;
+const url = new URL(`/guides/${entry.id}`, Astro.site).href;
+const jsonLd = [
+  articleLd({
+    title: heading,
+    description,
+    url,
+    published,
+    modified: updated,
+    image: new URL('/og-default.png', Astro.site).href,
+  }),
+];
+
+const toc = headings.filter((h) => h.depth === 2 && h.slug !== 'sources');
+---
+
+<Base {title} {description} type="article" {jsonLd}>
+  <div class="container">
+    <Breadcrumbs
+      items={[
+        { name: 'Home', href: '/' },
+        { name: 'Guides', href: '/guides' },
+        { name: heading, href: `/guides/${entry.id}` },
+      ]}
+    />
+    <div class="page-head">
+      <h1>{heading}</h1>
+      <p class="meta">Updated <time datetime={updated}>{new Date(updated + 'T00:00:00Z').toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })}</time></p>
+    </div>
+    <article class="article prose">
+      {toc.length > 2 && (
+        <nav class="toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            {toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
+          </ol>
+        </nav>
+      )}
+      <Content />
+      <div class="callout">
+        <p>Want to see where your rank could land? Try the <a href="/jee-main-college-predictor">JEE Main college predictor</a>.</p>
+      </div>
+      <AuthorBox {updated} />
+    </article>
+  </div>
+</Base>

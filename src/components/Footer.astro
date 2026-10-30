@@ -1,0 +1,40 @@
+---
+import { SITE, OFFICIAL } from '../config';
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>Tools</h2>
+        <ul>
+          <li><a href="/jee-main-college-predictor">JEE Main College Predictor</a></li>
+          <li><a href="/jee-main-percentile-vs-rank">JEE Main Percentile vs Rank</a></li>
+          <li><a href="/guides">Counselling guides</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Official websites</h2>
+        <ul>
+          <li><a href={OFFICIAL.josaa} rel="noopener" target="_blank">JoSAA</a></li>
+          <li><a href={OFFICIAL.jeeMain} rel="noopener" target="_blank">JEE Main (NTA)</a></li>
+          <li><a href={OFFICIAL.csab} rel="noopener" target="_blank">CSAB</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>{SITE.name}</h2>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/methodology">Methodology</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-note">
+      © {year} {SITE.name}. An independent website, not affiliated with JoSAA, NTA or CSAB.
+      Predictions are estimates and do not guarantee admission. Always confirm dates, rules and cutoffs on the official websites.
+    </p>
+  </div>
+</footer>

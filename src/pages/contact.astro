@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+
+const title = `Contact Us | ${SITE.name}`;
+const description = `Report a mistake, ask a question or share a suggestion about ${SITE.name}.`;
+---
+
+<Base {title} {description}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Contact', href: '/contact' }]} />
+    <div class="page-head"><h1>Contact {SITE.name}</h1></div>
+    <div class="article prose">
+      <p>
+        Email us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>. We read every message about mistakes, missing
+        information and ideas for new guides.
+      </p>
+      <h2>Before you write</h2>
+      <ul>
+        <li>We cannot give an official allotment, change your rank or help with registration. Use the official JoSAA website for those.</li>
+        <li>If you are reporting a mistake, tell us the page and what you think is wrong. A link to the official source helps.</li>
+        <li>We do not ask for passwords, OTPs or payments. Anyone who does is not us.</li>
+      </ul>
+    </div>
+  </div>
+</Base>

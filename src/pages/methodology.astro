@@ -1,0 +1,70 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE, OFFICIAL } from '../config';
+
+const title = `How the College Predictor Works | ${SITE.name}`;
+const description = 'A plain explanation of how the RankOtalk JEE Main college predictor turns your rank into Safe, Moderate and Reach options, and where it falls short.';
+---
+
+<Base {title} {description}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Methodology', href: '/methodology' }]} />
+    <div class="page-head"><h1>How the college predictor works</h1></div>
+    <div class="article prose">
+      <p>
+        This page explains, without jargon, how the {SITE.name} predictor turns your rank into a list of colleges and why
+        you should treat that list as a guide rather than a guarantee.
+      </p>
+
+      <h2>The idea</h2>
+      <p>
+        In JoSAA counselling, every seat is given to the best-ranked candidate who wants it. After each round, JoSAA
+        publishes the closing rank of every seat group: the rank of the last candidate who got that seat. If your rank is
+        better than a seat’s past closing rank, you would have been allotted that seat in that round of that year.
+      </p>
+
+      <h2>Step by step</h2>
+      <ol>
+        <li>You enter your rank, category, gender and home state.</li>
+        <li>We keep only the seat groups that apply to you. Your category decides which rank list and seats are used. Your gender decides whether the female-only pool is included. Your home state decides whether Home State seats at an NIT apply to you.</li>
+        <li>For each seat group we compare your rank with the past closing rank.</li>
+        <li>A seat is marked <strong>Safe</strong> when your rank is comfortably better than the closing rank, <strong>Moderate</strong> when it is close, and <strong>Reach</strong> when it is slightly worse. Seats that are far out of reach are left out.</li>
+        <li>The list is sorted from the most competitive seats to the least, and you can filter it by branch.</li>
+      </ol>
+
+      <h2>What is covered</h2>
+      <ul>
+        <li>NITs, IIITs and GFTIs, which admit through JEE Main rank.</li>
+        <li>The OPEN, EWS, OBC-NCL, SC and ST categories.</li>
+        <li>Gender-neutral and female-only seats, and Home State seats at NITs.</li>
+      </ul>
+
+      <h2>What is not covered</h2>
+      <ul>
+        <li>IITs, which admit through JEE Advanced rank.</li>
+        <li>PwD seat groups.</li>
+        <li>Private universities and state counselling, which have their own processes.</li>
+      </ul>
+
+      <h2>Limits you should know about</h2>
+      <p>
+        Past closing ranks show a pattern, not a rule. Each year the number of seats, the difficulty of the paper, the number
+        of candidates and the popularity of branches change, and closing ranks also shift between rounds. A prediction can
+        therefore be too optimistic or too cautious. That is why the results are grouped into Safe, Moderate and Reach, and
+        why we suggest filling a wide list in your true order of preference.
+      </p>
+
+      <h2>Official sources</h2>
+      <p>
+        For anything that decides your admission, such as dates, fees, eligibility and the seat matrix, use the official
+        websites: <a href={OFFICIAL.josaa} rel="noopener" target="_blank">JoSAA</a>,
+        <a href={OFFICIAL.jeeMain} rel="noopener" target="_blank">JEE Main (NTA)</a> and
+        <a href={OFFICIAL.csab} rel="noopener" target="_blank">CSAB</a>.
+      </p>
+
+      <h2>Corrections</h2>
+      <p>If you spot something wrong, tell us on the <a href="/contact">contact page</a> and we will look into it.</p>
+    </div>
+  </div>
+</Base>

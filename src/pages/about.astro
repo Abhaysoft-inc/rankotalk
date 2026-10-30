@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+
+const title = `About ${SITE.name} | Free JEE Main Counselling Tools`;
+const description = `${SITE.name} builds free tools and guides that help JEE Main students understand their rank and plan JoSAA counselling.`;
+---
+
+<Base {title} {description}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'About', href: '/about' }]} />
+    <div class="page-head"><h1>About {SITE.name}</h1></div>
+    <div class="article prose">
+      <p>
+        {SITE.name} is a free resource for students who have just taken JEE Main and have to make one of the biggest
+        decisions of their school life: which college and which branch. We build tools and write guides so that this
+        decision is made with clear information instead of rumours.
+      </p>
+
+      <h2>What we do</h2>
+      <ul>
+        <li>A <a href="/jee-main-college-predictor">college predictor</a> that turns your rank into a shortlist of NITs, IIITs and GFTIs.</li>
+        <li>A <a href="/jee-main-percentile-vs-rank">percentile to rank calculator</a> for the time before the final rank list is out.</li>
+        <li><a href="/guides">Guides</a> that explain JoSAA counselling, choice filling, quotas and documents in plain language.</li>
+      </ul>
+
+      <h2>What we believe</h2>
+      <ul>
+        <li><strong>Free and open.</strong> No login, no email, no paywall for the predictor or the guides.</li>
+        <li><strong>Honest estimates.</strong> A prediction is a starting point. We say so on the page, and we show what it cannot know.</li>
+        <li><strong>Official sources first.</strong> Dates, fees and rules come from JoSAA, NTA and CSAB, and we link to them so you can check.</li>
+      </ul>
+
+      <h2>Independence</h2>
+      <p>
+        {SITE.name} is an independent website. We are not part of, endorsed by or affiliated with JoSAA, NTA, CSAB or any
+        institute. For anything official, such as registration, fee payment or seat acceptance, use the official JoSAA website only.
+      </p>
+
+      <h2>How the predictor works</h2>
+      <p>Read the <a href="/methodology">methodology page</a> for a plain explanation of the approach and its limits.</p>
+
+      <h2>Contact</h2>
+      <p>Found a mistake or have a suggestion? Write to us from the <a href="/contact">contact page</a>.</p>
+    </div>
+  </div>
+</Base>

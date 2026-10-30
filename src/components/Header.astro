@@ -1,0 +1,17 @@
+---
+import { NAV } from '../config';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => path === href || path.startsWith(href + '/');
+---
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo" aria-label="RankOtalk home">Rank<span>O</span>talk</a>
+    <nav class="nav" aria-label="Main">
+      {NAV.map((item) => (
+        <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>

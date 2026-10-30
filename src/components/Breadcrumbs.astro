@@ -1,0 +1,24 @@
+---
+import { breadcrumbLd } from '../lib/schema';
+
+interface Props {
+  items: { name: string; href: string }[];
+}
+
+const { items } = Astro.props;
+const origin = Astro.site!;
+const ld = breadcrumbLd(items.map((i) => ({ name: i.name, url: new URL(i.href, origin).href })));
+---
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {items.map((item, i) => (
+      <li>
+        {i === items.length - 1
+          ? <span aria-current="page">{item.name}</span>
+          : <a href={item.href}>{item.name}</a>}
+      </li>
+    ))}
+  </ol>
+</nav>
+<script type="application/ld+json" set:html={JSON.stringify(ld)} />

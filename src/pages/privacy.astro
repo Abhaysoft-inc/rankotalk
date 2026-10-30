@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+
+const title = `Privacy Policy | ${SITE.name}`;
+const description = `How ${SITE.name} handles the information you enter and the data collected when you visit the site.`;
+---
+
+<Base {title} {description}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'Privacy', href: '/privacy' }]} />
+    <div class="page-head"><h1>Privacy Policy</h1></div>
+    <div class="article prose">
+      <p>{SITE.name} is built so that you can use it without giving us your personal details.</p>
+
+      <h2>What you enter in the tools</h2>
+      <p>
+        The rank, category, gender and home state you enter in the predictor are used only to produce your result. We do not
+        ask for your name, email address or phone number, and we do not require an account. The predictor puts your inputs in
+        the page address so that you can bookmark or share your result, so anyone who has that link can see those inputs.
+      </p>
+
+      <h2>Visit data</h2>
+      <p>
+        We use Vercel Web Analytics to count visits and see which pages are useful. It reports page views, referrers,
+        countries and device types in aggregate, and it does not use cookies or follow you across other websites. Our
+        hosting provider, Vercel, also keeps basic server logs such as IP address and browser type for security and
+        reliability. We use this information to improve the site. We do not sell it.
+      </p>
+
+      <h2>Cookies</h2>
+      <p>
+        We do not set cookies to track you. Vercel Web Analytics works without cookies. If we add other tools in future,
+        we will update this page to describe them.
+      </p>
+
+      <h2>Links to other websites</h2>
+      <p>We link to official websites such as JoSAA, NTA and CSAB. Those sites have their own privacy policies.</p>
+
+      <h2>Children</h2>
+      <p>Many of our readers are under 18. We do not knowingly collect personal information from anyone.</p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        We may update this policy and will change the page when we do. Questions can be sent to
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      </p>
+    </div>
+  </div>
+</Base>

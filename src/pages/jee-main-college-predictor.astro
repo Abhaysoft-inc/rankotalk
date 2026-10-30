@@ -1,0 +1,273 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import Predictor from '../components/predictor/Predictor.tsx';
+import { SITE, OFFICIAL } from '../config';
+import { faqLd, webAppLd } from '../lib/schema';
+
+const title = `JEE Main College Predictor ${SITE.examYear} by Rank | ${SITE.name}`;
+const description =
+  'Free JEE Main college predictor. Enter your rank, category, gender and home state to see the NITs, IIITs and GFTIs you can target. No login needed.';
+
+const faqs = [
+  {
+    q: 'What is a JEE Main college predictor?',
+    a: 'A JEE Main college predictor is a tool that compares your JEE Main rank with the closing ranks of past JoSAA counselling rounds and lists the NITs, IIITs and GFTIs, with branches, where you have a realistic chance of getting a seat.',
+  },
+  {
+    q: 'How accurate is a JEE Main college predictor?',
+    a: 'It is a good starting point for a shortlist, not a promise. Closing ranks move every year with the number of seats, the difficulty of the paper and the number of candidates, and they also change from round to round. Treat Safe options as likely, Moderate as roughly even, and Reach as a stretch.',
+  },
+  {
+    q: 'Do I need to log in or share my email to use this predictor?',
+    a: 'No. You can use the RankOtalk predictor without creating an account and without sharing your email address or phone number.',
+  },
+  {
+    q: 'Which rank should I enter, CRL or category rank?',
+    a: 'If you are in the General (OPEN) category, enter your Common Rank List (CRL) rank. If you are in EWS, OBC-NCL, SC or ST, enter your category rank to see seats reserved for your category. You can also run the predictor again as OPEN with your CRL rank, because reserved-category candidates are considered for OPEN seats too.',
+  },
+  {
+    q: 'Does this predictor include IITs?',
+    a: 'No. IIT admission is based on JEE Advanced rank, not JEE Main rank. This predictor covers the institutes that admit through JEE Main rank in JoSAA counselling: NITs, IIITs and GFTIs.',
+  },
+  {
+    q: 'What is the difference between Home State and Other State quota?',
+    a: 'At NITs, roughly half the seats are kept for candidates from the NIT’s own state (Home State quota) and the rest are open to everyone else (Other State quota). Home State candidates compete for fewer, separate seats, so the closing ranks are usually more relaxed for them. Select your home state in the predictor to include this.',
+  },
+  {
+    q: 'Can I get an NIT with 85 percentile in JEE Main?',
+    a: 'If about 12 lakh candidates appear, an 85 percentile works out to a rank near 1,80,000, which is beyond the closing rank for most NIT programs in the General category. Reserved-category candidates, Home State quota candidates and later counselling rounds can open up options, so check the predictor with your category rank and state.',
+  },
+  {
+    q: 'How does the predictor decide Safe, Moderate and Reach?',
+    a: 'For each seat group, the predictor compares your rank with the past closing rank. If your rank is comfortably better than that closing rank the seat is marked Safe, if it is close the seat is Moderate, and if it is slightly worse the seat is marked Reach. Seats that are far out of reach are not shown.',
+  },
+  {
+    q: 'Does the predictor work for female-only seats?',
+    a: 'Yes. Choose Female as your gender and the results take the female-only seat pool into account along with gender-neutral seats.',
+  },
+  {
+    q: 'Can I use the predictor before my result with an expected rank?',
+    a: 'Yes. If you only have a percentile, convert it to an expected rank with the percentile to rank calculator and enter that rank. Keep in mind that the final rank can differ from the estimate.',
+  },
+  {
+    q: 'When does JoSAA counselling start?',
+    a: 'JoSAA counselling has usually started in June, after the JEE Advanced results. The exact schedule is announced on the official JoSAA website, so check josaa.nic.in for current dates.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} JEE Main College Predictor`,
+    url: new URL('/jee-main-college-predictor', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['how-it-works', 'How this JEE Main college predictor works'],
+  ['which-rank', 'Which rank should you enter?'],
+  ['safe-moderate-reach', 'What Safe, Moderate and Reach mean'],
+  ['rank-bands', 'What kind of colleges to expect at different ranks'],
+  ['home-state', 'Home State vs Other State quota'],
+  ['categories', 'Category, PwD and female-only seats'],
+  ['counselling-steps', 'JoSAA counselling in six steps'],
+  ['limits', 'What no predictor can tell you'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'JEE Main College Predictor', href: '/jee-main-college-predictor' }]} />
+
+    <div class="page-head">
+      <h1>JEE Main College Predictor {SITE.examYear}</h1>
+      <p class="lead">
+        Enter your JEE Main rank, category, gender and home state to see which NITs, IIITs and GFTIs you can realistically
+        target in JoSAA counselling. It is free, and you do not need to log in or share your email.
+      </p>
+    </div>
+
+    <Predictor client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          {toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}
+        </ol>
+      </nav>
+
+      <h2 id="how-it-works">How this JEE Main college predictor works</h2>
+      <p>
+        Every year, JoSAA publishes the opening and closing rank of each seat group after every counselling round.
+        The closing rank is the rank of the last candidate who was allotted that seat. If your rank is better than
+        (lower than) the closing rank of a seat in a previous year, you would have got that seat then, and you have
+        a reasonable chance of getting something similar now.
+      </p>
+      <p>
+        The predictor does exactly that comparison for you. It takes your rank, category, gender and home state,
+        picks the seat groups that apply to you, and sorts them into Safe, Moderate and Reach. You get a shortlist
+        of institute and branch pairs that you can take into choice filling, instead of reading thousands of rows
+        in a spreadsheet.
+      </p>
+      <p>
+        The results cover NITs, IIITs and GFTIs, which are the institutes that admit through JEE Main rank. You can
+        read more about the approach on the <a href="/methodology">methodology page</a>.
+      </p>
+
+      <h2 id="which-rank">Which rank should you enter?</h2>
+      <p>JEE Main gives you more than one rank, and the predictor needs the right one.</p>
+      <ul>
+        <li><strong>General (OPEN) category:</strong> enter your Common Rank List (CRL) rank.</li>
+        <li><strong>EWS, OBC-NCL, SC or ST:</strong> enter your category rank for seats reserved in your category.</li>
+        <li>
+          <strong>Reserved-category candidates should run it twice.</strong> You are also considered for OPEN seats
+          on your CRL rank. Run the predictor once with your category and category rank, then again as OPEN with
+          your CRL rank, and combine the two lists.
+        </li>
+      </ul>
+      <p>
+        If you only have a percentile so far, use the <a href="/jee-main-percentile-vs-rank">percentile to rank
+        calculator</a> to get an expected rank first.
+      </p>
+
+      <h2 id="safe-moderate-reach">What Safe, Moderate and Reach mean</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Result</th><th scope="col">What it means</th><th scope="col">How to use it</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="tag tag-safe">Safe</span></td>
+              <td>Your rank is comfortably better than the past closing rank.</td>
+              <td>Keep a few of these at the end of your choice list so you are never left without a seat.</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-moderate">Moderate</span></td>
+              <td>Your rank is close to the past closing rank. It could go either way.</td>
+              <td>The core of your list. Fill many of these in your order of preference.</td>
+            </tr>
+            <tr>
+              <td><span class="tag tag-reach">Reach</span></td>
+              <td>Your rank is slightly worse than the past closing rank.</td>
+              <td>Put your dream choices at the top. Seats open up in later rounds, so reaches sometimes work out.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="rank-bands">What kind of colleges to expect at different ranks</h2>
+      <p>
+        These bands describe the usual pattern for General-category candidates with Other State quota. They are rough,
+        they change every year, and your category, gender and home state can move you a long way in either direction.
+        Use the predictor above for your own numbers.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">JEE Main CRL rank</th><th scope="col">Usual pattern</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">Up to about 3,000</td>
+              <td>Computer science and related branches at the most sought-after NITs.</td>
+            </tr>
+            <tr>
+              <td class="num">3,000 to 10,000</td>
+              <td>Computer science, AI and electronics at the next group of NITs, and information technology at the top IIITs.</td>
+            </tr>
+            <tr>
+              <td class="num">10,000 to 25,000</td>
+              <td>Computer science at mid-ranked NITs and GFTIs, and electronics or electrical at strong NITs.</td>
+            </tr>
+            <tr>
+              <td class="num">25,000 to 50,000</td>
+              <td>Electrical, mechanical, civil and chemical branches at good NITs, and computer science at newer NITs.</td>
+            </tr>
+            <tr>
+              <td class="num">50,000 to 1,00,000</td>
+              <td>Newer NITs, IIITs and GFTIs, mostly in core branches. Home State quota matters a lot here.</td>
+            </tr>
+            <tr>
+              <td class="num">Beyond 1,00,000</td>
+              <td>Limited options in the General category through JoSAA. Reserved categories, Home State quota, later rounds and CSAB special rounds can help.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="home-state">Home State vs Other State quota</h2>
+      <p>
+        At NITs, about half of the seats in each branch are reserved for Home State (HS) candidates, meaning those whose
+        state of eligibility is the state where the NIT is located. The other half is the Other State (OS) quota, open to
+        candidates from every other state. IIITs and GFTIs mostly work on an All India (AI) quota, though some institutes
+        keep a home state share.
+      </p>
+      <p>
+        The practical effect is large. If you are from Kerala, your rank only competes with other Kerala candidates for
+        the Home State seats at NIT Calicut, so you can often get a better branch there than someone with the same rank
+        from another state. Select your home state in the predictor so that this is taken into account. Our guide on
+        <a href="/guides/home-state-vs-other-state-quota">Home State vs Other State quota</a> explains who counts as a
+        home state candidate.
+      </p>
+
+      <h2 id="categories">Category, PwD and female-only seats</h2>
+      <ul>
+        <li>
+          <strong>EWS, OBC-NCL, SC and ST:</strong> each has its own rank list and its own seats. Choose your category
+          in the predictor and enter your category rank. Keep your certificates ready, because a certificate in the wrong
+          format is a common reason for cancelled seats. See the <a href="/guides/documents-required-for-josaa-reporting">documents guide</a>.
+        </li>
+        <li>
+          <strong>Female candidates:</strong> JoSAA has a separate female-only pool in addition to gender-neutral seats.
+          Choose Female as your gender and both are considered.
+        </li>
+        <li>
+          <strong>PwD candidates:</strong> PwD seat groups have their own rank lists and are not covered by this predictor.
+          Check the opening and closing ranks for PwD seats on the <a href={OFFICIAL.josaa} rel="noopener" target="_blank">official JoSAA website</a>.
+        </li>
+      </ul>
+
+      <h2 id="counselling-steps">JoSAA counselling in six steps</h2>
+      <ol>
+        <li><strong>Register</strong> on the JoSAA portal with your JEE Main details.</li>
+        <li><strong>Fill choices</strong> in your order of preference. This is where the predictor helps most.</li>
+        <li><strong>Lock your choices</strong> before the deadline. Mock allotments help you see where your list stands.</li>
+        <li><strong>Check the allotment</strong> after each round and choose Freeze, Float or Slide.</li>
+        <li><strong>Pay the seat acceptance fee and upload documents</strong> by the deadline, then wait for the institute to verify them.</li>
+        <li><strong>Move to the next round or exit.</strong> After the last JoSAA round, CSAB special rounds fill vacant seats.</li>
+      </ol>
+      <p>
+        The full walkthrough is in our <a href="/guides/josaa-counselling-process">JoSAA counselling process guide</a>, and the
+        <a href="/guides/josaa-choice-filling-strategy">choice filling strategy guide</a> shows how to order your list.
+      </p>
+
+      <h2 id="limits">What no predictor can tell you</h2>
+      <p>A predictor works from the past, and counselling does not repeat itself exactly. Keep these in mind.</p>
+      <ul>
+        <li><strong>Seat numbers change.</strong> New branches, added seats or removed seats shift closing ranks.</li>
+        <li><strong>The paper and the crowd change.</strong> An easier paper or more candidates in the same score range moves ranks around.</li>
+        <li><strong>Rounds differ.</strong> Closing ranks usually relax in later rounds as candidates upgrade or withdraw.</li>
+        <li><strong>Branch demand shifts.</strong> Fast-growing branches such as AI and data science have been getting more competitive.</li>
+        <li><strong>Rules can change.</strong> Eligibility, quotas and dates are published each year in the JoSAA information bulletin.</li>
+      </ul>
+      <div class="callout">
+        <p>
+          Use the predictor to build a wide, well-ordered list, then confirm every rule and date on the
+          <a href={OFFICIAL.josaa} rel="noopener" target="_blank">official JoSAA website</a>.
+        </p>
+      </div>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox updated={SITE.hubUpdated} />
+    </div>
+  </div>
+</Base>
