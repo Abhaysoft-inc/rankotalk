@@ -1,18 +1,60 @@
 ---
 import { NAV } from '../config';
+import type { NavLink } from '../config';
 import { cleanPath } from '../lib/url';
 
 const path = cleanPath(Astro.url.pathname);
 const isActive = (href: string) => path === href || path.startsWith(href + '/');
+const isLink = (item: (typeof NAV)[number]): item is NavLink => 'href' in item;
 ---
 
 <header class="site-header">
   <div class="container">
     <a href="/" class="logo" aria-label="RankOtalk home">Rank<span>O</span>talk</a>
     <nav class="nav" aria-label="Main">
-      {NAV.map((item) => (
-        <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
-      ))}
+      {NAV.map((item) =>
+        isLink(item) ? (
+          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>{item.label}</a>
+        ) : (
+          <details class="nav-menu" data-nav-menu>
+            <summary class={item.groups.some((g) => g.links.some((l) => isActive(l.href))) ? 'is-active' : undefined}>
+              {item.label}
+            </summary>
+            <div class="nav-panel">
+              {item.groups.map((group) => (
+                <div class="nav-group">
+                  <p class="nav-group-title">{group.label}</p>
+                  <ul>
+                    {group.links.map((link) => (
+                      <li>
+                        <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </details>
+        ),
+      )}
     </nav>
   </div>
 </header>
+
+<script>
+  // Close open menus on an outside click or Escape.
+  const menus = document.querySelectorAll<HTMLDetailsElement>('[data-nav-menu]');
+  document.addEventListener('click', (e) => {
+    menus.forEach((m) => {
+      if (m.open && !m.contains(e.target as Node)) m.open = false;
+    });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    menus.forEach((m) => {
+      if (!m.open) return;
+      m.open = false;
+      m.querySelector('summary')?.focus();
+    });
+  });
+</script>

@@ -1,0 +1,243 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import MbbsFinder from '../components/mbbs/MbbsFinder.tsx';
+import { SITE } from '../config';
+import { faqLd, webAppLd } from '../lib/schema';
+
+const title = `MBBS Abroad University Finder: Check NMC Rules | ${SITE.name}`;
+const description =
+  'Check any MBBS abroad university against NMC’s FMGL 2021 rules before you pay. Free finder for course length, internship, English medium, licence and budget.';
+const updated = '2026-10-31';
+
+const SOURCES = {
+  nmcFaq: 'https://nmc.org.in/storage/cms/rules-regulation-nmc/yFQCJ2Bf9yZU5zBfLCNUFIFG2E3optNdIAQfas9Z.pdf',
+  nmc: 'https://www.nmc.org.in',
+  wdoms: 'https://www.wdoms.org',
+  neet: 'https://news.careers360.com/neet-ug-must-for-foreign-mbbs-supreme-court-eligibility-certificate-study-abroad-china-us-uk-nmc-regulations-explained',
+};
+
+const faqs = [
+  {
+    q: 'Is there an official list of NMC-approved universities abroad?',
+    a: 'No. NMC does not publish a list of approved foreign universities. Whether your degree is accepted in India depends on whether your course meets the Foreign Medical Graduate Licentiate Regulations, 2021, so be careful with any list sold as "NMC approved".',
+  },
+  {
+    q: 'What is the minimum course duration for MBBS abroad?',
+    a: 'At least 54 months for the course itself, plus an internship of at least 12 months at the same foreign institution. The internship is separate from the 54 months.',
+  },
+  {
+    q: 'Can I do my internship in India after MBBS abroad?',
+    a: 'Not in place of the foreign internship. You must complete at least 12 months of internship at the same foreign institution, and then a supervised internship of at least 12 months in India after clearing the screening test or NExT.',
+  },
+  {
+    q: 'Is NEET required for MBBS abroad?',
+    a: 'Yes. Indian students must qualify NEET-UG to study MBBS abroad and later practise in India. The rule dates from a 2018 Medical Council of India notice and was upheld by the Supreme Court in 2025, according to news reports.',
+  },
+  {
+    q: 'Can I transfer to another university or to India midway through the course?',
+    a: 'No. Under the FMGL 2021 rules, the entire course, training and internship must be done at the same foreign institution. No part of it can be done in India or in another country.',
+  },
+  {
+    q: 'Is a bilingual MBBS course accepted by NMC?',
+    a: 'NMC requires English as the medium of instruction. A course taught partly in another language can be rejected, so get the medium of instruction confirmed in writing.',
+  },
+  {
+    q: 'Are online classes allowed?',
+    a: 'Only for theory subjects, and only when supplemented by offline practical and clinical training at the university and its hospital. You also need a certificate of successful completion.',
+  },
+  {
+    q: 'How long do I have to finish the course?',
+    a: 'The whole foreign medical course must be completed within ten years of the date you joined it.',
+  },
+  {
+    q: 'Does a WDOMS listing mean a university is approved for India?',
+    a: 'No. The World Directory of Medical Schools shows that a school exists and is recognised in its own country, which is a useful first check. Your course still has to meet the NMC rules.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} MBBS Abroad University Finder`,
+    url: new URL('/mbbs-abroad-university-finder', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['no-approved-list', 'There is no NMC-approved university list'],
+  ['nmc-rules', 'The NMC rules your university must meet'],
+  ['how-to-use', 'How to use the finder'],
+  ['verify', 'How to verify a university yourself'],
+  ['questions', 'Questions to ask before you pay'],
+  ['red-flags', 'Red flags to watch for'],
+  ['costs', 'What MBBS abroad really costs'],
+  ['after', 'After you graduate: NExT and internship in India'],
+  ['faq', 'Frequently asked questions'],
+  ['sources', 'Sources'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad University Finder', href: '/mbbs-abroad-university-finder' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad University Finder</h1>
+      <p class="lead">
+        Find out which of the universities you are considering will lead to a degree you can use in India. Enter each
+        university’s course details and cost, and the finder checks them against NMC’s rules and your budget. It is free,
+        with no sign-up and no agent calls.
+      </p>
+    </div>
+
+    <MbbsFinder client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          {toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}
+        </ol>
+      </nav>
+
+      <h2 id="no-approved-list">There is no NMC-approved university list</h2>
+      <p>
+        Many websites advertise lists of "NMC approved" universities abroad. NMC does not publish such a list. What
+        decides whether you can practise in India is whether your course meets the National Medical Commission (Foreign
+        Medical Graduate Licentiate) Regulations, 2021, known as FMGL 2021, and whether you then clear the licensing exam
+        and internship in India.
+      </p>
+      <p>
+        That is why this finder does not hand you a list. It checks the universities you are actually considering against
+        the rules, so you can see which ones are safe to pursue, which need more answers, and which to drop.
+      </p>
+      <p>
+        FMGL 2021 came into force on 18 November 2021. It applies to students who joined a foreign medical course on or after
+        that date. Students who joined earlier are covered by the previous regulations.
+      </p>
+
+      <h2 id="nmc-rules">The NMC rules your university must meet</h2>
+      <p>These come from NMC’s own FAQ on FMGL 2021. The regulation numbers are given so that you can check the text yourself.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Rule</th><th scope="col">What NMC requires</th><th scope="col">Regulation</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Course length</td><td>At least 54 months, not counting the internship.</td><td>Reg. 4(a)(i)</td></tr>
+            <tr><td>Internship</td><td>At least 12 months, in addition to the course, at the same foreign institution.</td><td>Reg. 4(a)(ii)</td></tr>
+            <tr><td>Language</td><td>English as the medium of instruction.</td><td>Reg. 4(a)(iii)</td></tr>
+            <tr><td>Subjects</td><td>Theory, practical and clinical training equivalent to the Indian MBBS, with hands-on clinical training.</td><td>Schedule I</td></tr>
+            <tr><td>Licence abroad</td><td>Registered with, or eligible for a licence from, the country’s medical regulator, at par with its own citizens.</td><td>Reg. 4(b)</td></tr>
+            <tr><td>One institution</td><td>The whole course, training and internship at the same foreign institution. No part in India or another country.</td><td>Schedule I, 2(iii)</td></tr>
+            <tr><td>Time limit</td><td>The course must be completed within 10 years of joining.</td><td>Schedule I, 2(iv)</td></tr>
+            <tr><td>Exam in India</td><td>Pass the National Exit Test (NExT) or the screening test set by NMC.</td><td>Reg. 4(d)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        NMC also allows online classes for theory subjects only, when they are supplemented by offline practical and clinical
+        training at the university and its hospital. And you must have qualified <strong>NEET-UG</strong> to study medicine
+        abroad. That rule dates from a 2018 Medical Council of India notice and was
+        <a href={SOURCES.neet} rel="noopener" target="_blank">upheld by the Supreme Court in 2025</a>, according to news reports.
+      </p>
+
+      <h2 id="how-to-use">How to use the finder</h2>
+      <ol>
+        <li>Tell it whether you have qualified NEET-UG, and your total budget for the whole course.</li>
+        <li>Add each university you are considering. Use the details from its official website and from written answers, not from an advert.</li>
+        <li>Choose "Not sure" whenever you do not know an answer. The finder will tell you exactly what to ask.</li>
+        <li>Press Check. Universities that meet every rule and fit your budget come first.</li>
+      </ol>
+      <p>
+        "Breaks an NMC rule" means at least one answer conflicts with FMGL 2021. "Check before you apply" means nothing breaks a
+        rule, but some answers are still unknown.
+      </p>
+
+      <h2 id="verify">How to verify a university yourself</h2>
+      <ol>
+        <li>
+          <strong>Search the <a href={SOURCES.wdoms} rel="noopener" target="_blank">World Directory of Medical Schools</a>.</strong>
+          A listing shows that the school is recognised in its own country. It does not by itself mean NMC accepts the course.
+        </li>
+        <li><strong>Find the country’s medical regulator</strong> and confirm that foreign graduates of this university can get a licence to practise there.</li>
+        <li><strong>Read NMC public notices</strong> on the <a href={SOURCES.nmc} rel="noopener" target="_blank">NMC website</a>. NMC has issued warnings about specific foreign universities.</li>
+        <li><strong>Get the course structure in writing</strong> from the university itself: the length in months, the internship and where it is done, and the language of teaching for every year.</li>
+        <li><strong>Talk to current Indian students</strong> at the university, not only to the agent who recruits for it.</li>
+      </ol>
+
+      <h2 id="questions">Questions to ask before you pay</h2>
+      <ul>
+        <li>How many months is the course, not counting the internship? How many months is the internship, and is it at your own hospitals?</li>
+        <li>Is every subject, including clinical postings, taught in English? Do patients speak another language, and how do students handle that?</li>
+        <li>After graduating, can I get a licence to practise in this country on the same terms as local graduates?</li>
+        <li>Is any part of the course run on another campus, in another country, or online?</li>
+        <li>What is the full cost per year: tuition, hostel, food, insurance, visa and registration? Which fees can rise each year?</li>
+        <li>How many Indian students graduated last year, and how many cleared the screening test in India?</li>
+        <li>What is the refund policy if I leave in the first year?</li>
+      </ul>
+
+      <h2 id="red-flags">Red flags to watch for</h2>
+      <ul>
+        <li>The university or agent calls itself "NMC approved".</li>
+        <li>You are told the internship can be done in India, or the course can be transferred later.</li>
+        <li>The course is shorter than 54 months, or the internship is folded into those months.</li>
+        <li>Teaching is "bilingual", or the clinical years are in the local language.</li>
+        <li>You are pushed to pay a large fee quickly, or in cash, before seeing official documents.</li>
+        <li>Fees quoted only for tuition, with hostel, food and other costs left out.</li>
+      </ul>
+
+      <h2 id="costs">What MBBS abroad really costs</h2>
+      <p>Compare the total cost for the whole course, not just the yearly tuition. Include:</p>
+      <ul>
+        <li>Tuition for every year, including any increase that the university can make.</li>
+        <li>Hostel and food for every year, which add a lot to the total and are often left out of adverts.</li>
+        <li>Visa, medical insurance, registration and document fees.</li>
+        <li>Flights home and back, at least once a year.</li>
+        <li>Currency changes. Fees are usually set in US dollars or the local currency, so the rupee cost can rise.</li>
+        <li>Preparation for NExT or the screening test after you return.</li>
+      </ul>
+      <p>Enter that full total in the finder so that the budget check means something.</p>
+
+      <h2 id="after">After you graduate: NExT and internship in India</h2>
+      <p>According to NMC’s FAQ, to practise in India a foreign medical graduate must:</p>
+      <ol>
+        <li>Have completed a course of at least 54 months and an internship of at least 12 months at the same foreign institution, taught in English, with the required subjects.</li>
+        <li>Be registered, or eligible for a licence, in the country where the degree was awarded.</li>
+        <li>Pass the screening test, or NExT, or any other test NMC requires.</li>
+        <li>Get provisional registration from a State Medical Council, applying through NMC.</li>
+        <li>Complete a supervised internship in India of at least 12 months.</li>
+      </ol>
+      <div class="callout">
+        <p>
+          Rules can change. Before you pay any fee, read the current notices on the
+          <a href={SOURCES.nmc} rel="noopener" target="_blank">NMC website</a> and get the university’s answers in writing.
+        </p>
+      </div>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li><a href={SOURCES.nmcFaq} rel="noopener" target="_blank">NMC: Frequently Asked Questions on the FMGL Regulations, 2021 (PDF)</a></li>
+        <li><a href={SOURCES.nmc} rel="noopener" target="_blank">National Medical Commission: public notices</a></li>
+        <li><a href={SOURCES.wdoms} rel="noopener" target="_blank">World Directory of Medical Schools</a></li>
+        <li><a href={SOURCES.neet} rel="noopener" target="_blank">Careers360: NEET UG must for foreign MBBS (Supreme Court ruling)</a></li>
+      </ul>
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'NMC’s FMGL 2021 FAQ', href: SOURCES.nmcFaq },
+          { label: 'NMC public notices', href: SOURCES.nmc },
+          { label: 'the World Directory of Medical Schools', href: SOURCES.wdoms },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

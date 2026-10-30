@@ -1,6 +1,6 @@
 # RankOtalk
 
-A static Astro site with a Preact predictor island. See `IMPLEMENTATION_PLAN.md` for the plan and `LAUNCH_CHECKLIST.md` before deploying.
+A static Astro site with a Preact predictor island. See `docs/IMPLEMENTATION_PLAN.md` for the plan and `docs/LAUNCH_CHECKLIST.md` before deploying.
 
 ## Commands
 

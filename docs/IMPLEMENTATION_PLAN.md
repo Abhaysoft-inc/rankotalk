@@ -382,3 +382,15 @@ Our page is `/college-admissions-calculator`: a working calculator plus the full
 - **A section for international and Indian applicants** that links to the JEE predictor.
 
 Possible upgrade: a college search that fills in the numbers automatically from the College Scorecard API (free API key from api.data.gov).
+
+---
+
+## 14. Third page: MBBS Abroad University Finder
+
+`/mbbs-abroad-university-finder`.
+
+- **NMC publishes no list of approved foreign universities.** So the finder checks the universities a student is considering against the FMGL 2021 rules: at least 54 months of course, a 12-month internship at the same institution, English medium, a licence in that country, no transfers, and no NMC warning. It also checks their budget.
+- **The rules are verified** from NMC's own FMGL 2021 FAQ and cited by regulation number. The logic is tested in `src/components/mbbs/check.test.ts`.
+- **No university database**, so nothing about a named university can be wrong.
+- **Content angle:** the honest "there is no approved list" explanation, verification steps, questions to ask agents, red flags and real costs.
+- **Possible upgrade:** a researched dataset of universities, one source per fact, as a separate searchable list.

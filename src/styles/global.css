@@ -89,6 +89,38 @@ a:hover { color: var(--color-accent-hover); text-decoration-thickness: 2px; }
 .nav a { color: var(--color-text); text-decoration: none; padding-block: .5rem; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--color-accent); color: var(--color-text); }
 
+/* Nav dropdown. On phones the panel spans the header; from 640px it sits under its button. */
+.site-header .container { position: relative; }
+.nav { align-items: center; }
+.nav-menu summary {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding-block: .5rem; border-bottom: 2px solid transparent;
+  color: var(--color-text); cursor: pointer; list-style: none;
+}
+.nav-menu summary::-webkit-details-marker { display: none; }
+.nav-menu summary::after {
+  content: ""; width: .4rem; height: .4rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+}
+.nav-menu[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.nav-menu summary:hover, .nav-menu summary.is-active { border-bottom-color: var(--color-accent); }
+.nav-panel {
+  position: absolute; top: 100%; left: 1rem; right: 1rem; z-index: 20;
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+  padding: .75rem 1rem;
+}
+@media (min-width: 640px) {
+  .nav-menu { position: relative; }
+  .nav-panel { left: 50%; right: auto; width: 17rem; transform: translateX(-50%); margin-top: .25rem; }
+}
+.nav-group + .nav-group { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--color-border); }
+.nav-group-title { margin: 0 0 .25rem; font-size: .8125rem; font-weight: 600; color: var(--color-muted); }
+.nav-panel ul { list-style: none; margin: 0; padding: 0; }
+.nav .nav-panel a { display: block; padding: .5rem 0; border: 0; font-size: 1rem; color: var(--color-text); text-decoration: none; }
+.nav .nav-panel a:hover, .nav .nav-panel a[aria-current="page"] { color: var(--color-accent); text-decoration: underline; }
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
