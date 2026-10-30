@@ -55,7 +55,7 @@ export const articleLd = (opts: {
   dateModified: opts.modified,
   image: opts.image,
   inLanguage: SITE.locale,
-  author: { '@type': 'Organization', name: SITE.authorName },
+  author: { '@type': 'Person', name: SITE.authorName },
   publisher: { '@type': 'Organization', name: SITE.name },
 });
 
