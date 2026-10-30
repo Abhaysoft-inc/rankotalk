@@ -27,7 +27,7 @@ const isLink = (item: (typeof NAV)[number]): item is NavLink => 'href' in item;
                   <ul>
                     {group.links.map((link) => (
                       <li>
-                        <a href={link.href} aria-current={isActive(link.href) ? 'page' : undefined}>{link.label}</a>
+                        <a href={link.href} aria-current={path === link.href ? 'page' : undefined}>{link.label}</a>
                       </li>
                     ))}
                   </ul>

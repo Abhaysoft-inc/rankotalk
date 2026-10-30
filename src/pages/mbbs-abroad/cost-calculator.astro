@@ -1,0 +1,154 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import CostCalculator from '../../components/mbbs/CostCalculator.tsx';
+import { SITE } from '../../config';
+import { faqLd, webAppLd } from '../../lib/schema';
+
+const title = `MBBS Abroad Total Cost Calculator | ${SITE.name}`;
+const description =
+  'Work out the real total cost of MBBS abroad in rupees: tuition, hostel, food, travel, fee increases and currency changes for every year of the course.';
+const updated = '2026-10-31';
+
+const NMC_FAQ = 'https://nmc.org.in/storage/cms/rules-regulation-nmc/yFQCJ2Bf9yZU5zBfLCNUFIFG2E3optNdIAQfas9Z.pdf';
+
+const faqs = [
+  {
+    q: 'What is the total cost of MBBS abroad?',
+    a: 'It depends on the country, the university and the exchange rate, so no single number is reliable. Add tuition, hostel, food, insurance, travel and one-time fees for every year of the course, then allow for fee rises and currency changes. The calculator on this page does that for you.',
+  },
+  {
+    q: 'Why is my total higher than the fee an agent quoted?',
+    a: 'Quotes often show only tuition, or only the first year. Hostel, food, insurance, visa renewals, flights and the internship year are frequently left out, and the rupee can weaken while you study.',
+  },
+  {
+    q: 'How does the exchange rate change the cost?',
+    a: 'Fees are usually charged in US dollars or the local currency. If the rupee falls against that currency, every later year costs more in rupees, even if the university does not raise its fees.',
+  },
+  {
+    q: 'How many years should I enter?',
+    a: 'Enter the full length including the internship. To meet NMC rules, the course must be at least 54 months, plus an internship of at least 12 months at the same institution, so most valid courses take about six years.',
+  },
+  {
+    q: 'Should I include costs after I return to India?',
+    a: 'Yes. Add preparation for NExT or the screening test under costs in India. You will also do a supervised internship in India of at least 12 months, so plan your living costs for that year too.',
+  },
+  {
+    q: 'Is MBBS abroad cheaper than a private medical college in India?',
+    a: 'Sometimes, but compare like with like: the full course cost including living and travel abroad, against the full fee and living costs at the Indian college. Use the same method for both.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} MBBS Abroad Total Cost Calculator`,
+    url: new URL('/mbbs-abroad/cost-calculator', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['what-to-include', 'What to include in the total cost'],
+  ['first-year-trap', 'Why the first-year fee is misleading'],
+  ['currency', 'How currency changes affect the cost'],
+  ['example', 'A worked example'],
+  ['compare', 'How to compare universities fairly'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }, { name: 'Total Cost Calculator', href: '/mbbs-abroad/cost-calculator' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad Total Cost Calculator</h1>
+      <p class="lead">
+        Find out what MBBS abroad will really cost in rupees, for every year of the course. Enter the university’s fees in
+        any currency, add living and travel costs, and see how fee rises and a weaker rupee change the total.
+      </p>
+    </div>
+
+    <CostCalculator client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+      </nav>
+
+      <h2 id="what-to-include">What to include in the total cost</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Cost</th><th scope="col">How often</th></tr></thead>
+          <tbody>
+            <tr><td>Tuition</td><td>Every year</td></tr>
+            <tr><td>Hostel or rent</td><td>Every year</td></tr>
+            <tr><td>Food and daily living</td><td>Every year</td></tr>
+            <tr><td>Medical insurance and visa or residence permit renewal</td><td>Every year</td></tr>
+            <tr><td>Admission, registration and visa fees</td><td>Once</td></tr>
+            <tr><td>Documents, attestation and medical tests in India</td><td>Once</td></tr>
+            <tr><td>Flights home and back</td><td>Every year</td></tr>
+            <tr><td>The internship year abroad</td><td>Once</td></tr>
+            <tr><td>Preparation for NExT or the screening test</td><td>After you return</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Ask the university, in writing, which of these its quoted fee includes. Anything it leaves out, add yourself.</p>
+
+      <h2 id="first-year-trap">Why the first-year fee is misleading</h2>
+      <p>
+        Adverts usually show one yearly tuition figure. The real cost is that figure multiplied over five or six years, plus
+        living costs, plus travel, plus any yearly fee rise. A course advertised by its tuition alone can end up costing far
+        more once everything is counted. Ask the university for its full fee schedule for every year, in writing.
+      </p>
+      <p>
+        Remember the internship. NMC requires at least 12 months of internship at the same foreign institution, after a course of
+        at least 54 months, as set out in <a href={NMC_FAQ} rel="noopener" target="_blank">NMC’s FMGL 2021 FAQ</a>. That year has
+        living costs too, even if tuition is lower.
+      </p>
+
+      <h2 id="currency">How currency changes affect the cost</h2>
+      <p>
+        Most universities charge in US dollars or their local currency. You pay in rupees, so each year’s cost in rupees is:
+      </p>
+      <div class="callout">
+        <p><strong>Cost in rupees = fees in foreign currency × exchange rate in that year</strong></p>
+      </div>
+      <p>
+        If the rupee weakens, the exchange rate rises and every later year costs more, even when the university keeps its fees
+        the same. Use the "Yearly fall of the rupee" assumption to see the effect. Try 0% for a steady rate and a few percent for
+        a weaker rupee, and plan your budget around the higher figure.
+      </p>
+
+      <h2 id="example">A worked example</h2>
+      <p>These figures are made up to show the method. They are not the fees of any real university.</p>
+      <ul>
+        <li>Course of 6 years, with fees charged in US dollars at ₹85 to the dollar.</li>
+        <li>Tuition US$4,000, hostel US$1,200 and food US$1,300 per year.</li>
+        <li>One-time admission and visa fees of US$1,000, plus ₹50,000 of costs in India.</li>
+        <li>One trip home a year at ₹40,000.</li>
+      </ul>
+      <p>
+        With no fee rise and a steady rupee, the total is <strong>₹36.90 lakh</strong>. If the rupee falls 4% each year, the same
+        course costs <strong>₹40.40 lakh</strong>, about ₹3.5 lakh more, with no change in the university’s fees.
+      </p>
+
+      <h2 id="compare">How to compare universities fairly</h2>
+      <ul>
+        <li>Use the same course length, including the internship, for every university.</li>
+        <li>Include the same cost items for each one, especially hostel, food and travel.</li>
+        <li>Use the same exchange rate and the same assumptions.</li>
+        <li>Check that each university meets NMC’s rules first. A cheap course is no bargain if the degree cannot be used in India. Use the <a href="/mbbs-abroad/university-finder">university finder</a>.</li>
+      </ul>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox {updated} sources={[{ label: 'NMC’s FMGL 2021 FAQ', href: NMC_FAQ }]} />
+    </div>
+  </div>
+</Base>

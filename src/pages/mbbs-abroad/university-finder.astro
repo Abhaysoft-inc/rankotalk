@@ -1,11 +1,11 @@
 ---
-import Base from '../layouts/Base.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import FAQ from '../components/FAQ.astro';
-import AuthorBox from '../components/AuthorBox.astro';
-import MbbsFinder from '../components/mbbs/MbbsFinder.tsx';
-import { SITE } from '../config';
-import { faqLd, webAppLd } from '../lib/schema';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import MbbsFinder from '../../components/mbbs/MbbsFinder.tsx';
+import { SITE } from '../../config';
+import { faqLd, webAppLd } from '../../lib/schema';
 
 const title = `MBBS Abroad University Finder: Check NMC Rules | ${SITE.name}`;
 const description =
@@ -61,7 +61,7 @@ const faqs = [
 const jsonLd = [
   webAppLd({
     name: `${SITE.name} MBBS Abroad University Finder`,
-    url: new URL('/mbbs-abroad-university-finder', Astro.site).href,
+    url: new URL('/mbbs-abroad/university-finder', Astro.site).href,
     description,
   }),
   faqLd(faqs),
@@ -83,7 +83,7 @@ const toc = [
 
 <Base {title} {description} {jsonLd}>
   <div class="container">
-    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad University Finder', href: '/mbbs-abroad-university-finder' }]} />
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }, { name: 'University Finder', href: '/mbbs-abroad/university-finder' }]} />
 
     <div class="page-head">
       <h1>MBBS Abroad University Finder</h1>

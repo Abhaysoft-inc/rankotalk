@@ -394,3 +394,23 @@ Possible upgrade: a college search that fills in the numbers automatically from 
 - **No university database**, so nothing about a named university can be wrong.
 - **Content angle:** the honest "there is no approved list" explanation, verification steps, questions to ask agents, red flags and real costs.
 - **Possible upgrade:** a researched dataset of universities, one source per fact, as a separate searchable list.
+
+---
+
+## 15. MBBS abroad section (`/mbbs-abroad/...`)
+
+The hub is `/mbbs-abroad`. Tools are listed once, in `MBBS_TOOLS` in `src/config.ts`, which feeds the nav dropdown, the hub cards, the footer and llms.txt. The old `/mbbs-abroad-university-finder` URL redirects (301) to `/mbbs-abroad/university-finder` via `vercel.json`.
+
+| Tool | URL | Data |
+| --- | --- | --- |
+| Eligibility Checker (before you go, and after you graduate) | `/mbbs-abroad/eligibility-checker` | NMC FMGL 2021 FAQ; NEET age and subject rules. Class 12 marks are shown as "commonly stated, confirm" |
+| University Finder | `/mbbs-abroad/university-finder` | NMC FMGL 2021 FAQ; the user enters each university's details |
+| Total Cost Calculator | `/mbbs-abroad/cost-calculator` | The user's own figures; the worked example is unit-tested |
+| Loans and Scholarships | `/mbbs-abroad/loans-and-scholarships` | EMI maths with interest during study; the worked example is unit-tested |
+| Document and Visa Checklist | `/mbbs-abroad/document-checker` | Generic checklist plus "keep for return" items taken from the NMC FAQ; progress is saved in localStorage |
+
+Still to build:
+
+- **FMGE University and Country Explorer.** Official data is NBEMS's institute-wise FMGE performance reports (natboard.edu.in/stats, by year). Extract the rows and verify the totals against each report.
+- **Country vs Country Comparison.** Build it on the same NBEMS data plus the NMC rules. No unsourced fees.
+- **MBBS abroad admission guides.**

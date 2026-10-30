@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { SITE } from '../config';
+import { SITE, MBBS_TOOLS } from '../config';
 
 // A plain-text map of the site for AI assistants and other agents (see llmstxt.org).
 export const GET: APIRoute = async ({ site }) => {
@@ -21,7 +21,10 @@ export const GET: APIRoute = async ({ site }) => {
     `- [JEE Main College Predictor](${abs('/jee-main-college-predictor')}): enter rank, category, gender and home state to see Safe, Moderate and Reach options at NITs, IIITs and GFTIs.`,
     `- [JEE Main Percentile vs Rank Calculator](${abs('/jee-main-percentile-vs-rank')}): convert an NTA percentile to an approximate rank, or a rank to a percentile, with the formula explained.`,
     `- [College Admissions Calculator](${abs('/college-admissions-calculator')}): for US college applicants. Compares SAT or ACT, GPA and each college's acceptance rate and middle 50% score range to sort colleges into Reach, Target and Likely, with the rules and the official 2018 ACT/SAT concordance table shown on the page.`,
-    `- [MBBS Abroad University Finder](${abs('/mbbs-abroad-university-finder')}): checks foreign medical universities a student is considering against NMC's Foreign Medical Graduate Licentiate Regulations, 2021 (54-month course, 12-month internship at the same institution, English medium, licence in that country, no transfers) and their budget. Explains that NMC publishes no list of approved foreign universities.`,
+    '',
+    '## MBBS abroad (for Indian students)',
+    `- [MBBS abroad tools](${abs('/mbbs-abroad')}): overview of the NMC rules for foreign medical degrees and all MBBS abroad tools. NMC publishes no list of approved foreign universities; courses must meet the Foreign Medical Graduate Licentiate Regulations, 2021.`,
+    ...MBBS_TOOLS.map((t) => `- [MBBS Abroad ${t.label}](${abs(t.href)}): ${t.description}`),
     '',
     '## Guides',
     ...guides.map((g) => `- [${g.data.title}](${abs(`/guides/${g.id}`)}): ${g.data.description}`),

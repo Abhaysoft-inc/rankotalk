@@ -1,0 +1,159 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import LoanCalculator from '../../components/mbbs/LoanCalculator.tsx';
+import { SITE } from '../../config';
+import { faqLd, webAppLd } from '../../lib/schema';
+
+const title = `MBBS Abroad Loan Calculator & Scholarships | ${SITE.name}`;
+const description =
+  'Calculate the EMI and true cost of an education loan for MBBS abroad, including interest during study, and see where scholarships for MBBS abroad really exist.';
+const updated = '2026-10-31';
+
+const SOURCES = {
+  nos: 'https://socialjustice.gov.in',
+  nmc: 'https://www.nmc.org.in',
+};
+
+const faqs = [
+  {
+    q: 'Can I get an education loan for MBBS abroad?',
+    a: 'Yes. Banks and other lenders give education loans for medical study abroad. Most ask for a parent or guardian as co-applicant, and larger loans usually need collateral such as property or a fixed deposit. Terms differ by lender, so compare offers.',
+  },
+  {
+    q: 'Do I pay interest while studying?',
+    a: 'Interest is usually charged from the day each part of the loan is paid out. During the study period you either pay that interest every month or let it be added to the loan, which makes the EMI larger later.',
+  },
+  {
+    q: 'When does EMI start for an MBBS abroad loan?',
+    a: 'After the moratorium: the study period plus a grace period that the bank sets. For MBBS abroad, the study period includes the internship, so it is often around six years.',
+  },
+  {
+    q: 'Are there scholarships for MBBS abroad?',
+    a: 'Very few. Many government overseas scholarships in India, such as the National Overseas Scholarship, are for master’s and PhD study, not MBBS. Some universities offer merit-based tuition discounts, which you should get in writing.',
+  },
+  {
+    q: 'Will the bank lend for any foreign university?',
+    a: 'Banks decide course by course. Show the bank the admission letter and the fee schedule, and check first that the course meets NMC’s FMGL 2021 rules, because a degree that cannot be used in India is a poor reason to borrow.',
+  },
+  {
+    q: 'How can I reduce the interest I pay?',
+    a: 'Pay the interest during study if the family can, take the loan in yearly parts instead of all at once, borrow only what the real total cost needs, and prepay when you can if the bank allows it without a penalty.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} MBBS Abroad Education Loan Calculator`,
+    url: new URL('/mbbs-abroad/loans-and-scholarships', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['how-it-works', 'How an education loan for MBBS abroad works'],
+  ['example', 'A worked example'],
+  ['compare', 'How to compare loan offers'],
+  ['scholarships', 'Scholarships for MBBS abroad'],
+  ['how-much', 'How much to borrow'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }, { name: 'Loans and Scholarships', href: '/mbbs-abroad/loans-and-scholarships' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad Education Loan Calculator and Scholarships</h1>
+      <p class="lead">
+        See what an education loan for MBBS abroad will really cost: the interest that builds up during six years of study,
+        the EMI afterwards, and the total you pay back. Then see where scholarships actually exist.
+      </p>
+    </div>
+
+    <LoanCalculator client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+      </nav>
+
+      <h2 id="how-it-works">How an education loan for MBBS abroad works</h2>
+      <ol>
+        <li><strong>Payout.</strong> The bank usually pays the university directly, often in parts as each year’s fees fall due.</li>
+        <li><strong>Interest during study.</strong> Interest runs from the day each part is paid out. You either pay it every month or let it be added to the loan.</li>
+        <li><strong>Moratorium.</strong> No EMI is due during the course and a grace period after it. For MBBS abroad, the course includes the internship.</li>
+        <li><strong>Repayment.</strong> After the moratorium you pay a fixed EMI over the repayment period.</li>
+      </ol>
+      <p>
+        Because MBBS abroad takes about six years, the interest during study can add a large amount to the loan. That is the part
+        most simple EMI calculators leave out, and the part this calculator shows.
+      </p>
+
+      <h2 id="example">A worked example</h2>
+      <p>
+        These numbers are only an example, not an offer from any bank: a loan of ₹10 lakh at 10% a year, paid out all at the start,
+        with 6 years of study, a 6-month grace period and 10 years of repayment.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Interest during study</th><th scope="col" class="num">Monthly EMI</th><th scope="col" class="num">Total paid back</th></tr></thead>
+          <tbody>
+            <tr><td>Paid every month (about ₹8,333 a month while studying)</td><td class="num">₹13,215</td><td class="num">₹22.36 lakh</td></tr>
+            <tr><td>Added to the loan</td><td class="num">₹21,805</td><td class="num">₹26.17 lakh</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Paying the study interest as you go saves about ₹3.8 lakh in this example, and keeps the EMI far lower.</p>
+
+      <h2 id="compare">How to compare loan offers</h2>
+      <ul>
+        <li><strong>Interest rate and how it can change.</strong> Ask whether the rate is fixed or linked to a benchmark that can rise.</li>
+        <li><strong>Interest during study.</strong> Ask whether it is simple or compounded, and whether it is added to the loan.</li>
+        <li><strong>Payout.</strong> Yearly payouts cost less interest than taking the whole amount at the start.</li>
+        <li><strong>Grace period and repayment period.</strong> Longer periods lower the EMI but raise the total interest.</li>
+        <li><strong>Collateral, co-applicant and margin money.</strong> Ask how much the family must pay itself and what security is needed.</li>
+        <li><strong>Fees and charges.</strong> Processing fees, insurance and prepayment penalties all add to the cost.</li>
+        <li><strong>Currency.</strong> The loan is in rupees but fees are often in foreign currency, so a weaker rupee means you need more.</li>
+      </ul>
+      <p>Enter each bank’s terms in the calculator and compare the total paid back, not only the EMI.</p>
+
+      <h2 id="scholarships">Scholarships for MBBS abroad</h2>
+      <p>Be realistic: full scholarships for MBBS abroad are rare.</p>
+      <ul>
+        <li>
+          <strong>Government overseas scholarships</strong> in India are mostly for master’s and PhD study. The
+          <a href={SOURCES.nos} rel="noopener" target="_blank">National Overseas Scholarship</a> of the Ministry of Social Justice,
+          for example, does not cover undergraduate medicine.
+        </li>
+        <li><strong>State government schemes</strong> vary from state to state. Check with your state’s social welfare or minority welfare department.</li>
+        <li><strong>University discounts.</strong> Some universities reduce tuition for strong marks. Get the discount, its conditions and how long it lasts in writing.</li>
+        <li><strong>Agent "scholarships".</strong> Be careful with discounts that apply only if you pay through a particular agent. Compare the full cost, not the discount.</li>
+      </ul>
+
+      <h2 id="how-much">How much to borrow</h2>
+      <p>
+        Start from the real total cost of the course, not the first-year fee. The
+        <a href="/mbbs-abroad/cost-calculator">total cost calculator</a> adds tuition, hostel, food, travel and currency changes
+        for every year. Take away what the family can pay, and borrow only the gap. Before you borrow anything, check that the
+        course meets NMC’s rules with the <a href="/mbbs-abroad/university-finder">university finder</a>.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'the Ministry of Social Justice and Empowerment', href: SOURCES.nos },
+          { label: 'NMC', href: SOURCES.nmc },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

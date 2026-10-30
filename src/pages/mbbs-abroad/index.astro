@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import { SITE, MBBS_TOOLS } from '../../config';
+import { faqLd } from '../../lib/schema';
+
+const title = `MBBS Abroad Tools for Indian Students | ${SITE.name}`;
+const description =
+  'Free MBBS abroad tools for Indian students: check NEET and NMC eligibility, test universities against the FMGL 2021 rules and work out the real total cost.';
+const updated = '2026-10-31';
+
+const NMC_FAQ = 'https://nmc.org.in/storage/cms/rules-regulation-nmc/yFQCJ2Bf9yZU5zBfLCNUFIFG2E3optNdIAQfas9Z.pdf';
+const NMC = 'https://www.nmc.org.in';
+
+const has = (href: string) => MBBS_TOOLS.some((t) => t.href === href);
+
+const faqs = [
+  {
+    q: 'Is MBBS abroad valid in India?',
+    a: 'It can be, if the course meets NMC’s Foreign Medical Graduate Licentiate Regulations, 2021 and you then pass NExT or the screening test and complete a supervised internship in India. Validity depends on the course meeting the rules, not on any list.',
+  },
+  {
+    q: 'Does NMC publish a list of approved universities abroad?',
+    a: 'No. NMC does not publish a list of approved foreign universities. Lists called "NMC approved" are not NMC documents, so check each course against the rules yourself.',
+  },
+  {
+    q: 'Do I need NEET for MBBS abroad?',
+    a: 'Yes. Indian students must qualify NEET-UG to study MBBS abroad and later practise in India.',
+  },
+  {
+    q: 'How long is MBBS abroad?',
+    a: 'To meet NMC rules, the course must be at least 54 months long, followed by an internship of at least 12 months at the same foreign institution. Most courses that meet both rules take about six years.',
+  },
+];
+---
+
+<Base {title} {description} jsonLd={[faqLd(faqs)]}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad Tools for Indian Students</h1>
+      <p class="lead">
+        Free tools to plan MBBS abroad without relying on an agent’s word. Check that you are eligible, test each university
+        against NMC’s rules, and work out what the whole course will really cost.
+      </p>
+    </div>
+
+    <section class="section" aria-labelledby="tools-heading" style="margin-top:2rem">
+      <h2 id="tools-heading" style="font-size:1.625rem;font-weight:600;line-height:1.25">Tools</h2>
+      <div class="card-list">
+        {MBBS_TOOLS.map((t) => (
+          <article class="card">
+            <h3><a href={t.href}>{t.label}</a></h3>
+            <p>{t.description}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <div class="article prose">
+      <h2 id="plan">Plan MBBS abroad in six steps</h2>
+      <ol>
+        <li>
+          <strong>Check that you are eligible.</strong> You need to qualify NEET-UG, meet the age and Class 12 rules, and plan for
+          the rules you must meet to practise in India later.
+          {has('/mbbs-abroad/eligibility-checker') && <> Use the <a href="/mbbs-abroad/eligibility-checker">eligibility checker</a>.</>}
+        </li>
+        <li>
+          <strong>Shortlist universities that meet NMC’s rules.</strong> Get each university’s course details in writing and
+          test them in the <a href="/mbbs-abroad/university-finder">university finder</a>.
+        </li>
+        <li>
+          <strong>Work out the total cost.</strong> Add tuition, hostel, food, travel and currency changes for every year, not
+          just the first-year fee.
+          {has('/mbbs-abroad/cost-calculator') && <> Use the <a href="/mbbs-abroad/cost-calculator">total cost calculator</a>.</>}
+        </li>
+        <li>
+          <strong>Plan the money.</strong> Compare family savings, education loans and any scholarships.
+          {has('/mbbs-abroad/loans-and-scholarships') && <> See the <a href="/mbbs-abroad/loans-and-scholarships">loan and scholarship finder</a>.</>}
+        </li>
+        <li>
+          <strong>Prepare documents and the visa.</strong> Start with the passport and certificates, because attestation takes time.
+          {has('/mbbs-abroad/document-checker') && <> Use the <a href="/mbbs-abroad/document-checker">document checker</a>.</>}
+        </li>
+        <li>
+          <strong>Plan for the return.</strong> After graduating you will need to pass NExT or the screening test and complete a
+          supervised internship of at least 12 months in India.
+        </li>
+      </ol>
+
+      <h2 id="rules">The rules that decide whether your degree counts in India</h2>
+      <p>
+        NMC’s Foreign Medical Graduate Licentiate Regulations, 2021 apply to students who joined a foreign medical course on or
+        after 18 November 2021. In short, the course must:
+      </p>
+      <ul>
+        <li>last at least 54 months, plus an internship of at least 12 months at the same foreign institution;</li>
+        <li>be taught in English;</li>
+        <li>be done entirely at one foreign institution, with no transfer and no part in India or another country;</li>
+        <li>lead to a licence to practise in that country, at par with its own citizens;</li>
+        <li>be completed within 10 years of joining.</li>
+      </ul>
+      <p>
+        These points come from <a href={NMC_FAQ} rel="noopener" target="_blank">NMC’s FAQ on FMGL 2021</a>. The
+        <a href="/mbbs-abroad/university-finder">university finder</a> explains each rule with its regulation number.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'NMC’s FMGL 2021 FAQ', href: NMC_FAQ },
+          { label: 'NMC public notices', href: NMC },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

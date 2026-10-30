@@ -133,7 +133,8 @@ a:hover { color: var(--color-accent-hover); text-decoration-thickness: 2px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: .25rem; }
 .footer-grid { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
-@media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 640px) { .footer-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .footer-grid { grid-template-columns: repeat(4, 1fr); } }
 .footer-note { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--color-border); }
 
 /* Breadcrumbs */
@@ -253,6 +254,14 @@ caption { text-align: left; color: var(--color-muted); font-size: .875rem; paddi
 .btn-link:hover { color: var(--color-accent-hover); }
 .advice { list-style: disc; padding-left: 1.25rem; margin-top: 1rem; font-size: 1rem; }
 .advice li { margin-top: .25rem; }
+
+/* Checklists */
+.progress { height: 8px; background: var(--color-border); border-radius: 2px; margin-top: .75rem; overflow: hidden; }
+.progress span { display: block; height: 100%; background: var(--color-accent); }
+.checklist { list-style: none; margin: 0; padding: 0; }
+.checklist li + li { border-top: 1px solid var(--color-border); }
+.checklist label { display: flex; gap: .75rem; align-items: flex-start; padding: .75rem 0; font-size: 1rem; line-height: 1.5; cursor: pointer; }
+.checklist input { width: 1.25rem; height: 1.25rem; margin-top: .15rem; flex-shrink: 0; accent-color: var(--color-accent); }
 
 /* Tags */
 .tag { display: inline-block; font-size: .8125rem; font-weight: 600; padding: .1rem .5rem; border-radius: 2px; line-height: 1.5; }

@@ -1,0 +1,169 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import EligibilityChecker from '../../components/mbbs/EligibilityChecker.tsx';
+import { SITE } from '../../config';
+import { faqLd, webAppLd } from '../../lib/schema';
+
+const title = `MBBS Abroad Eligibility Checker (NEET & NMC) | ${SITE.name}`;
+const description =
+  'Check if you can study MBBS abroad and practise in India after: age, Class 12 subjects and marks, NEET-UG, and the NMC FMGL 2021 rules for your degree.';
+const updated = '2026-10-31';
+
+const SOURCES = {
+  nmcFaq: 'https://nmc.org.in/storage/cms/rules-regulation-nmc/yFQCJ2Bf9yZU5zBfLCNUFIFG2E3optNdIAQfas9Z.pdf',
+  nmc: 'https://www.nmc.org.in',
+  neetNta: 'https://neet.nta.nic.in',
+  neetNews: 'https://news.careers360.com/neet-ug-must-for-foreign-mbbs-supreme-court-eligibility-certificate-study-abroad-china-us-uk-nmc-regulations-explained',
+};
+
+const faqs = [
+  {
+    q: 'Who is eligible for MBBS abroad?',
+    a: 'Indian students who are at least 17 on 31 December of the year of admission, have passed Class 12 with Physics, Chemistry, Biology and English, meet the minimum marks, and have qualified NEET-UG.',
+  },
+  {
+    q: 'Is NEET compulsory for MBBS abroad?',
+    a: 'Yes. Indian students must qualify NEET-UG to study MBBS abroad and later practise in India. The rule dates from a 2018 Medical Council of India notice and was upheld by the Supreme Court in 2025, according to news reports.',
+  },
+  {
+    q: 'What marks do I need in Class 12 for MBBS abroad?',
+    a: 'The commonly stated minimum is 50% in Physics, Chemistry and Biology together for General and EWS candidates, 40% for OBC-NCL, SC and ST candidates, and 45% for General candidates with a benchmark disability. Confirm the current rule with NMC, because universities can also set higher minimums.',
+  },
+  {
+    q: 'Is there an upper age limit for MBBS abroad?',
+    a: 'NEET-UG currently has no upper age limit. The rule to check is the minimum age of 17 by 31 December of the year of admission.',
+  },
+  {
+    q: 'What do I need to practise in India after MBBS abroad?',
+    a: 'Your course must meet the FMGL 2021 rules. After graduating, you must pass NExT or the screening test, get provisional registration from a State Medical Council, and complete a supervised internship in India of at least 12 months.',
+  },
+  {
+    q: 'I joined my course before 18 November 2021. Which rules apply to me?',
+    a: 'FMGL 2021 does not apply to students who joined a foreign medical course before 18 November 2021. The earlier regulations apply to them, and they still need to pass the screening test.',
+  },
+  {
+    q: 'Can I take online classes during MBBS abroad?',
+    a: 'Only for theory subjects. NMC allows online theory classes when they are supplemented by offline practical and clinical training at the university and its hospital, with a certificate of completion.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} MBBS Abroad Eligibility Checker`,
+    url: new URL('/mbbs-abroad/eligibility-checker', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['before', 'Who can study MBBS abroad'],
+  ['neet', 'NEET-UG is compulsory'],
+  ['after', 'What you need to practise in India'],
+  ['steps', 'Steps after you graduate'],
+  ['faq', 'Frequently asked questions'],
+  ['sources', 'Sources'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }, { name: 'Eligibility Checker', href: '/mbbs-abroad/eligibility-checker' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad Eligibility Checker</h1>
+      <p class="lead">
+        Two checks in one place. Before you go, see whether you can study MBBS abroad: age, Class 12 subjects and marks, and
+        NEET-UG. After you graduate, see whether your foreign degree meets NMC’s rules to practise in India.
+      </p>
+    </div>
+
+    <EligibilityChecker client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+      </nav>
+
+      <h2 id="before">Who can study MBBS abroad</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Rule</th><th scope="col">What you need</th></tr></thead>
+          <tbody>
+            <tr><td>Age</td><td>At least 17 on 31 December of the year you start. There is currently no upper age limit for NEET-UG.</td></tr>
+            <tr><td>Class 12 subjects</td><td>Physics, Chemistry, Biology or Biotechnology, and English.</td></tr>
+            <tr><td>Class 12 marks</td><td>The commonly stated minimum is 50% in Physics, Chemistry and Biology together (40% for OBC-NCL, SC and ST; 45% for General candidates with a benchmark disability). Confirm the current rule with NMC.</td></tr>
+            <tr><td>NEET-UG</td><td>You must have qualified NEET-UG.</td></tr>
+            <tr><td>Passport</td><td>Needed for the student visa. Apply early.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Universities can set their own higher requirements, such as higher marks or an English test. Check each university’s
+        admission criteria as well.
+      </p>
+
+      <h2 id="neet">NEET-UG is compulsory</h2>
+      <p>
+        Since a 2018 Medical Council of India notice, Indian students must qualify NEET-UG to study a medical degree abroad that
+        they want to use in India. News reports say the Supreme Court upheld this rule in 2025. Without a qualifying NEET result
+        you cannot later sit the screening test or NExT, whichever university you attend. NEET-UG itself is run by the
+        <a href={SOURCES.neetNta} rel="noopener" target="_blank">National Testing Agency</a>.
+      </p>
+
+      <h2 id="after">What you need to practise in India</h2>
+      <p>
+        NMC’s Foreign Medical Graduate Licentiate Regulations, 2021 (FMGL 2021) apply to students who joined on or after
+        18 November 2021. According to <a href={SOURCES.nmcFaq} rel="noopener" target="_blank">NMC’s FAQ</a>, your course must:
+      </p>
+      <ul>
+        <li>last at least 54 months, plus an internship of at least 12 months at the same foreign institution;</li>
+        <li>be taught in English, with subjects equivalent to the Indian MBBS;</li>
+        <li>be done entirely at one foreign institution, with no part in India or another country;</li>
+        <li>make you eligible for a licence to practise in that country, at par with its citizens;</li>
+        <li>be completed within 10 years of joining;</li>
+        <li>use online classes for theory only, with practical and clinical training done in person.</li>
+      </ul>
+      <p>
+        Still choosing a university? Test each option in the <a href="/mbbs-abroad/university-finder">university finder</a>.
+      </p>
+
+      <h2 id="steps">Steps after you graduate</h2>
+      <ol>
+        <li>Pass NExT, or the screening test, or any other test that NMC requires.</li>
+        <li>Get provisional registration from a State Medical Council, applying through NMC.</li>
+        <li>Complete a supervised internship in India of at least 12 months.</li>
+      </ol>
+      <div class="callout">
+        <p>
+          Rules change. Read the latest notices on the <a href={SOURCES.nmc} rel="noopener" target="_blank">NMC website</a>
+          before you make any payment or decision.
+        </p>
+      </div>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <h2 id="sources">Sources</h2>
+      <ul>
+        <li><a href={SOURCES.nmcFaq} rel="noopener" target="_blank">NMC: FAQs on the FMGL Regulations, 2021 (PDF)</a></li>
+        <li><a href={SOURCES.nmc} rel="noopener" target="_blank">National Medical Commission: regulations and public notices</a></li>
+        <li><a href={SOURCES.neetNta} rel="noopener" target="_blank">NEET-UG: National Testing Agency</a></li>
+        <li><a href={SOURCES.neetNews} rel="noopener" target="_blank">Careers360: NEET UG must for foreign MBBS (Supreme Court ruling)</a></li>
+      </ul>
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'NMC’s FMGL 2021 FAQ', href: SOURCES.nmcFaq },
+          { label: 'NMC regulations', href: SOURCES.nmc },
+          { label: 'NTA’s NEET-UG site', href: SOURCES.neetNta },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

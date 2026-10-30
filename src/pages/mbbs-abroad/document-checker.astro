@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import FAQ from '../../components/FAQ.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
+import DocumentChecklist from '../../components/mbbs/DocumentChecklist.tsx';
+import { SITE } from '../../config';
+import { faqLd, webAppLd } from '../../lib/schema';
+
+const title = `MBBS Abroad Visa & Document Checklist | ${SITE.name}`;
+const description =
+  'Free MBBS abroad document checklist for Indian students: admission, apostille, student visa, travel, and the records NMC rules need when you return to India.';
+const updated = '2026-10-31';
+
+const SOURCES = {
+  nmcFaq: 'https://nmc.org.in/storage/cms/rules-regulation-nmc/yFQCJ2Bf9yZU5zBfLCNUFIFG2E3optNdIAQfas9Z.pdf',
+  mea: 'https://www.mea.gov.in/apostille.htm',
+  hcch: 'https://www.hcch.net/en/instruments/conventions/status-table/?cid=41',
+  passport: 'https://www.passportindia.gov.in',
+};
+
+const faqs = [
+  {
+    q: 'What documents are needed for MBBS abroad?',
+    a: 'Usually a passport, Class 10 and Class 12 marksheets and certificates, the NEET-UG scorecard, the university’s admission letter, photographs, attested copies of certificates, and the student visa documents such as a medical certificate and insurance. Some countries ask for more, so check the embassy’s list.',
+  },
+  {
+    q: 'What is an apostille, and do I need one?',
+    a: 'An apostille is a certificate that makes an Indian document valid in another country that has joined the Hague Apostille Convention. In India, the Ministry of External Affairs issues it. Countries outside the convention need embassy attestation instead.',
+  },
+  {
+    q: 'Is an eligibility certificate from NMC needed for MBBS abroad?',
+    a: 'A qualifying NEET-UG result is what Indian students need to study medicine abroad. Keep the scorecard safe, because you will need it again when you return to India.',
+  },
+  {
+    q: 'How early should I start preparing documents?',
+    a: 'As soon as you decide to study abroad. Passports, apostilles and police clearance certificates can take weeks, and some depend on others being ready first.',
+  },
+  {
+    q: 'What should I keep for when I come back to India?',
+    a: 'Your degree, transcript, internship completion certificate, licence or registration in that country, any certificate for online classes, and all passports with entry and exit stamps. These help show your course met NMC’s rules.',
+  },
+  {
+    q: 'Can an agent apply for my visa?',
+    a: 'Many embassies accept applications through official visa centres. Whoever helps you, make sure the application goes through the embassy’s official channels and that you keep copies of everything submitted.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} MBBS Abroad Document Checklist`,
+    url: new URL('/mbbs-abroad/document-checker', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['order', 'The order to prepare documents in'],
+  ['apostille', 'Apostille or embassy attestation'],
+  ['country', 'Country-specific documents'],
+  ['return', 'Documents to keep for your return'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'MBBS Abroad', href: '/mbbs-abroad' }, { name: 'Document Checker', href: '/mbbs-abroad/document-checker' }]} />
+
+    <div class="page-head">
+      <h1>MBBS Abroad Document and Visa Checklist</h1>
+      <p class="lead">
+        Tick off every document you need for MBBS abroad, from the passport to the student visa, plus the records you must keep
+        for when you return to India. Your progress is saved in your browser.
+      </p>
+    </div>
+
+    <DocumentChecklist client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+      </nav>
+
+      <h2 id="order">The order to prepare documents in</h2>
+      <ol>
+        <li><strong>Passport first.</strong> Almost everything else depends on it. Apply through <a href={SOURCES.passport} rel="noopener" target="_blank">Passport Seva</a> as early as possible.</li>
+        <li><strong>Collect certificates.</strong> Class 10 and 12 marksheets and certificates, the NEET-UG scorecard and your birth certificate.</li>
+        <li><strong>Get the admission letter and written course details</strong> from the university itself. Check them against NMC’s rules in the <a href="/mbbs-abroad/university-finder">university finder</a> before paying.</li>
+        <li><strong>Attest or apostille your certificates.</strong> This can take time, so start as soon as you know the country.</li>
+        <li><strong>Apply for the visa</strong> with the medical certificate, insurance and anything else the embassy lists.</li>
+        <li><strong>Make copies</strong> of everything, on paper and digitally, before you fly.</li>
+      </ol>
+
+      <h2 id="apostille">Apostille or embassy attestation</h2>
+      <p>
+        Indian certificates must be certified before another country accepts them. If the country is a member of the
+        <a href={SOURCES.hcch} rel="noopener" target="_blank">Hague Apostille Convention</a>, India’s
+        <a href={SOURCES.mea} rel="noopener" target="_blank">Ministry of External Affairs issues an apostille</a>. If it is not a
+        member, the documents usually need attestation by that country’s embassy instead. Check the convention’s member list and
+        the embassy’s instructions for your country.
+      </p>
+
+      <h2 id="country">Country-specific documents</h2>
+      <p>
+        Items marked "Some countries" in the checklist, such as an HIV test report, a police clearance certificate, an official
+        invitation letter or certified translations, are required only by certain countries. Every embassy publishes its own list
+        for student visas. Use it as the final word, and use this checklist to make sure nothing common is missed.
+      </p>
+
+      <h2 id="return">Documents to keep for your return</h2>
+      <p>
+        To practise in India, NMC’s Foreign Medical Graduate Licentiate Regulations, 2021 require a course of at least 54 months, a
+        12-month internship at the same institution, teaching in English, and eligibility for a licence in that country. NMC also
+        asks for a certificate of successful completion if you took theory classes online. These come from
+        <a href={SOURCES.nmcFaq} rel="noopener" target="_blank">NMC’s FAQ on FMGL 2021</a>. Keep the documents that show each of these
+        safe from day one:
+      </p>
+      <ul>
+        <li>degree certificate and transcript;</li>
+        <li>internship completion certificate;</li>
+        <li>licence or registration to practise in that country;</li>
+        <li>certificate for any online classes;</li>
+        <li>all passports, including old ones, with entry and exit stamps.</li>
+      </ul>
+      <p>
+        Not sure you are eligible in the first place? Use the <a href="/mbbs-abroad/eligibility-checker">eligibility checker</a>.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'NMC’s FMGL 2021 FAQ', href: SOURCES.nmcFaq },
+          { label: 'the Ministry of External Affairs', href: SOURCES.mea },
+          { label: 'the Hague Apostille Convention status table', href: SOURCES.hcch },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

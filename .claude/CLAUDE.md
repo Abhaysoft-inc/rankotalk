@@ -11,7 +11,12 @@ The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are i
 | jee main college predictor (main target) | `/jee-main-college-predictor` |
 | jee main percentile vs rank | `/jee-main-percentile-vs-rank` |
 | college admissions calculator | `/college-admissions-calculator` |
-| mbbs abroad university finder | `/mbbs-abroad-university-finder` |
+| mbbs abroad (hub) | `/mbbs-abroad` |
+| mbbs abroad university finder | `/mbbs-abroad/university-finder` (301 from `/mbbs-abroad-university-finder`) |
+| mbbs abroad eligibility (NEET, NMC, FMG) | `/mbbs-abroad/eligibility-checker` |
+| mbbs abroad total cost calculator | `/mbbs-abroad/cost-calculator` |
+| mbbs abroad education loan, scholarships | `/mbbs-abroad/loans-and-scholarships` |
+| mbbs abroad documents, visa checklist | `/mbbs-abroad/document-checker` |
 | JoSAA counselling long-tail | `/guides/*` (`src/content/guides/*.md`) |
 
 ## Working preferences
@@ -54,6 +59,7 @@ The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are i
 - Astro trims whitespace before `{expressions}` at a line break. Use `{' '}` where a space is needed.
 - In `npm run dev`, a one-off warning that the "guides" collection "does not exist or is empty" can appear while files are being edited. The project sits in OneDrive, which can briefly lock files. If `npm run build` lists the guide pages, it is harmless. If it keeps appearing in dev, restart the dev server.
 - Env: `SITE_URL` (the live domain) and `PUBLIC_GOOGLE_SITE_VERIFICATION` live in `.env` locally and must also be set in Vercel. `.env` is not committed.
+- If a page URL ever changes, add a permanent redirect in `vercel.json` `redirects` so indexed URLs keep working.
 - Tool logic lives as pure functions in `src/components/<tool>/*.ts` with Vitest tests next to them. The UI is a Preact island beside the logic.
 
 ## Checklist for every new page
@@ -62,7 +68,7 @@ The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are i
 2. `Base` layout (SEO, canonical, OG tags), `Breadcrumbs`, JSON-LD from `src/lib/schema.ts` (WebApplication for tools, Article for guides, FAQPage when there is an FAQ), and FAQ answers as plain text, so the schema matches the visible text.
 3. Page structure: H1 and lead, the tool, a table of contents, content sections, the FAQ, then `AuthorBox` with the page's sources.
 4. Link the new page from:
-   - a group in `NAV` in `src/config.ts` (the header shows Tools ▾, Guides and About; add tools only to the dropdown, never as new top-level items)
+   - a group in `NAV` in `src/config.ts` (the header shows Tools ▾, Guides and About; add tools only to the dropdown, never as new top-level items). MBBS abroad tools: add one entry to `MBBS_TOOLS` in `src/config.ts`; it feeds the nav, the /mbbs-abroad hub, the footer and llms.txt automatically. MBBS pages live under `src/pages/mbbs-abroad/` with breadcrumbs Home › MBBS Abroad › Tool.
    - `src/components/Footer.astro`
    - the home page cards in `src/pages/index.astro`
    - the About page list

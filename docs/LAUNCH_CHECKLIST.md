@@ -25,7 +25,7 @@ Nothing should go live until every item in **Gate** is done.
 - [ ] Bing Webmaster Tools: import the site from Search Console.
 - [ ] Run `SITE_URL=https://<domain> npm run indexnow` (the key file is in `public/`).
 - [ ] Run Lighthouse on the hub page on mobile. Target 95 or more.
-- [ ] After each new page goes live, request indexing for it in Search Console and Bing (latest: `/college-admissions-calculator`, `/mbbs-abroad-university-finder`).
+- [ ] After each new page goes live, request indexing for it in Search Console and Bing (latest: `/college-admissions-calculator`, and the MBBS abroad pages: `/mbbs-abroad`, `/mbbs-abroad/university-finder`, `/mbbs-abroad/eligibility-checker`, `/mbbs-abroad/cost-calculator`, `/mbbs-abroad/loans-and-scholarships`, `/mbbs-abroad/document-checker`).
 - [ ] View source on 3 live pages and confirm `<link rel="canonical">` is the clean URL (no `.html`, same domain you are indexing).
 - [ ] Open `/robots.txt`, `/sitemap-index.xml`, `/llms.txt` and `/.well-known/security.txt` on the live domain.
 - [ ] Check the social preview of the hub page (paste the link into WhatsApp or a Facebook/LinkedIn debugger).

@@ -1,5 +1,5 @@
 ---
-import { SITE, OFFICIAL } from '../config';
+import { SITE, OFFICIAL, MBBS_TOOLS } from '../config';
 const year = new Date().getFullYear();
 ---
 
@@ -7,21 +7,31 @@ const year = new Date().getFullYear();
   <div class="container">
     <div class="footer-grid">
       <div>
-        <h2>Tools</h2>
+        <h2>JEE Main</h2>
         <ul>
           <li><a href="/jee-main-college-predictor">JEE Main College Predictor</a></li>
           <li><a href="/jee-main-percentile-vs-rank">JEE Main Percentile vs Rank</a></li>
-          <li><a href="/college-admissions-calculator">College Admissions Calculator</a></li>
-          <li><a href="/mbbs-abroad-university-finder">MBBS Abroad University Finder</a></li>
-          <li><a href="/guides">Counselling guides</a></li>
+          <li><a href="/guides">JoSAA counselling guides</a></li>
         </ul>
       </div>
       <div>
-        <h2>Official websites</h2>
+        <h2>MBBS abroad</h2>
+        <ul>
+          <li><a href="/mbbs-abroad">All MBBS abroad tools</a></li>
+          {MBBS_TOOLS.map((t) => <li><a href={t.href}>{t.label}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <h2>US colleges</h2>
+        <ul>
+          <li><a href="/college-admissions-calculator">College Admissions Calculator</a></li>
+        </ul>
+        <h2 style="margin-top:1.25rem">Official websites</h2>
         <ul>
           <li><a href={OFFICIAL.josaa} rel="noopener" target="_blank">JoSAA</a></li>
           <li><a href={OFFICIAL.jeeMain} rel="noopener" target="_blank">JEE Main (NTA)</a></li>
           <li><a href={OFFICIAL.csab} rel="noopener" target="_blank">CSAB</a></li>
+          <li><a href="https://www.nmc.org.in" rel="noopener" target="_blank">National Medical Commission</a></li>
         </ul>
       </div>
       <div>
@@ -35,8 +45,9 @@ const year = new Date().getFullYear();
       </div>
     </div>
     <p class="footer-note">
-      © {year} {SITE.name}. An independent website, not affiliated with JoSAA, NTA or CSAB.
-      Predictions are estimates and do not guarantee admission. Always confirm dates, rules and cutoffs on the official websites.
+      © {year} {SITE.name}. An independent website, not affiliated with JoSAA, NTA, CSAB or NMC.
+      Predictions and checks are estimates and do not guarantee admission or recognition. Always confirm dates, rules and
+      figures on the official websites.
     </p>
   </div>
 </footer>
