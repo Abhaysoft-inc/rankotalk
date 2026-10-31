@@ -2,7 +2,7 @@
 
 RankOtalk is a college counselling website built for an SEO growth competition. The goal is to rank on Google for target keywords with useful tools and real content. It is live at https://rankotalk.vercel.app (Vercel; a push to `main` deploys).
 
-The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are in `docs/LAUNCH_CHECKLIST.md`. `docs/competitors_who_are_ranking_currently_content.md` holds competitor research, for reference only.
+The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are in `docs/LAUNCH_CHECKLIST.md`. `docs/competitors_who_are_ranking_currently_content.md` holds competitor research, for reference only. `docs/DATA_SOURCES.md` explains where and how to get the official data for every tool (JoSAA, NBEMS FMGE, College Scorecard, WDOMS and NMC, exchange rates), with checks and a refresh calendar. Follow it for any data work.
 
 ## Target keywords and their pages
 

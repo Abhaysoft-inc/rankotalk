@@ -11,7 +11,8 @@ const description =
 const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
 
 const jsonLd = [
-  websiteLd(Astro.site!.href),
+  // Google's fallback advice: the lowercase hostname as the last alternate name.
+  websiteLd(Astro.site!.href, ['Rank O Talk', Astro.site!.host]),
   orgLd(Astro.site!.href, new URL('/icon-512.png', Astro.site).href),
 ];
 ---

@@ -59,10 +59,12 @@ export const articleLd = (opts: {
   publisher: { '@type': 'Organization', name: SITE.name },
 });
 
-export const websiteLd = (url: string) => ({
+// Google's main signal for the site name shown in search results. Must be on the home page only.
+export const websiteLd = (url: string, alternateName: string[] = []) => ({
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: SITE.name,
+  ...(alternateName.length ? { alternateName } : {}),
   url,
   inLanguage: SITE.locale,
 });
