@@ -1,0 +1,215 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import FAQ from '../components/FAQ.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import Predictor from '../components/predictor/Predictor.tsx';
+import { SITE, OFFICIAL } from '../config';
+import { faqLd, webAppLd } from '../lib/schema';
+
+const title = `JEE Advanced College Predictor ${SITE.examYear} by Rank | ${SITE.name}`;
+const description =
+  'Free JEE Advanced college predictor for IITs. Enter your rank and category to find eligible branches across all 23 IITs in JoSAA. No login needed.';
+
+const updated = '2026-11-09';
+
+const faqs = [
+  {
+    q: 'What is the JEE Advanced college predictor?',
+    a: 'The JEE Advanced college predictor is a free tool that compares your JEE Advanced rank against official JoSAA opening and closing ranks from past counselling rounds across all 23 Indian Institutes of Technology (IITs).',
+  },
+  {
+    q: 'Is there any Home State quota for IITs?',
+    a: 'No. Unlike NITs which reserve 50% of seats under Home State quota, all seats in the 23 IITs are strictly allocated under the All India (AI) Quota. Every qualified candidate competes on equal terms irrespective of their home state or Class 12 board location.',
+  },
+  {
+    q: 'Can I get an IIT with a rank of 10,000 in JEE Advanced?',
+    a: 'Yes. In the General (OPEN) category, an All India Rank of 10,000 comfortably opens up core engineering branches (Civil, Chemical, Metallurgy, Mining, Materials) at newer 2nd-gen and 3rd-gen IITs (such as IIT Patna, IIT Mandi, IIT Bhubaneswar, IIT Jammu, and IIT Dharwad). For reserved categories (OBC-NCL, EWS, SC, ST), a 10,000 CRL rank translates to significantly higher category rank standings, unlocking CSE and Electrical branches.',
+  },
+  {
+    q: 'What rank is needed for Computer Science (CSE) at top IITs?',
+    a: 'For General (OPEN) candidates, CSE at IIT Bombay typically closes around AIR 65–70, IIT Delhi around AIR 115, IIT Madras around AIR 160, and IIT Kanpur around AIR 240. The top 7 IITs generally close all CSE seats within the top 600 to 1,000 ranks.',
+  },
+  {
+    q: 'Which rank should I enter: Common Rank List (CRL) or Category Rank?',
+    a: 'General candidates should enter their CRL rank. Candidates belonging to GEN-EWS, OBC-NCL, SC, or ST should enter their category rank to see category-reserved seats. You should also run the predictor a second time using your CRL rank under OPEN, as reserved-category candidates are also eligible for open seats.',
+  },
+  {
+    q: 'Does this predictor require a login or phone number?',
+    a: 'No. RankOTalk is 100% open and free. You can run unlimited predictions without entering your phone number, email address, or registering an account.',
+  },
+  {
+    q: 'How does the female-only supernumerary pool work in IITs?',
+    a: 'To maintain at least 20% female enrollment in every program, IITs create supernumerary female-only seats. If you select Female under Gender, the predictor evaluates both gender-neutral seats and the relaxed cutoffs of the female-only pool.',
+  },
+  {
+    q: 'What Class 12 marks are required for IIT admission?',
+    a: 'Under JoSAA Business Rules (Annexure 2a), candidates must either secure at least 75% aggregate marks in Class 12 with Physics, Chemistry, and Mathematics (65% for SC, ST, PwD), or fall within the category-wise top 20 percentile of their respective qualifying board.',
+  },
+];
+
+const jsonLd = [
+  webAppLd({
+    name: `${SITE.name} JEE Advanced College Predictor`,
+    url: new URL('/jee-advanced-college-predictor', Astro.site).href,
+    description,
+  }),
+  faqLd(faqs),
+];
+
+const toc = [
+  ['how-it-works', 'How the IIT college predictor works'],
+  ['all-india-quota', 'Why IITs have no Home State quota'],
+  ['iit-generations', 'The three generations of IITs'],
+  ['rank-expectations', 'What kind of branches to expect at your rank'],
+  ['female-pool', 'Female-only supernumerary seats in IITs'],
+  ['class-12-eligibility', 'Class 12 performance rules for IITs'],
+  ['faq', 'Frequently asked questions'],
+];
+---
+
+<Base {title} {description} {jsonLd}>
+  <div class="container">
+    <Breadcrumbs
+      items={[
+        { name: 'Home', href: '/' },
+        { name: 'JEE Advanced College Predictor', href: '/jee-advanced-college-predictor' },
+      ]}
+    />
+
+    <div class="page-head">
+      <h1>JEE Advanced College Predictor {SITE.examYear}</h1>
+      <p class="lead">
+        Find out which of the 23 Indian Institutes of Technology (IITs) and engineering branches you can target with your
+        JEE Advanced All India Rank. 100% free, no login or phone number required, and zero spam.
+      </p>
+    </div>
+
+    <Predictor exam="advanced" client:visible />
+
+    <div class="article prose">
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          {toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}
+        </ol>
+      </nav>
+
+      <h2 id="how-it-works">How the IIT college predictor works</h2>
+      <p>
+        Admission to all undergraduate B.Tech, BS, and Dual Degree programs at the <strong>23 Indian Institutes of Technology (IITs)</strong>
+        is conducted centrally by the Joint Seat Allocation Authority (JoSAA) based strictly on your <strong>JEE Advanced rank</strong>.
+      </p>
+      <p>
+        This predictor compares your JEE Advanced rank against verified opening and closing ranks from prior JoSAA rounds.
+        It evaluates the programs you qualify for and classifies each choice into:
+      </p>
+      <ul>
+        <li><span class="tag tag-safe">Safe</span> — Your rank is comfortably better than the past closing rank.</li>
+        <li><span class="tag tag-moderate">Moderate</span> — Your rank is close to the cutoff; high chance in later rounds.</li>
+        <li><span class="tag tag-reach">Reach</span> — A stretch choice; consider placing these at the top of your JoSAA preference list.</li>
+      </ul>
+      <p>
+        If you took JEE Main and want to explore NITs, IIITs, or GFTIs, use our dedicated
+        <a href="/jee-main-college-predictor">JEE Main College Predictor</a> instead.
+      </p>
+
+      <h2 id="all-india-quota">Why IITs have no Home State quota</h2>
+      <p>
+        A frequent point of confusion among aspirants is the difference in quota systems between NITs and IITs:
+      </p>
+      <ul>
+        <li><strong>NITs:</strong> Approximately 50% of seats are reserved under the Home State (HS) quota for students from the NIT's host state.</li>
+        <li><strong>IITs:</strong> <strong>100% of seats are All India (AI) Quota.</strong> There is zero regional or state reservation in IITs. A candidate from Maharashtra competing for IIT Bombay has the exact same cutoff as a candidate from Assam or Kerala.</li>
+      </ul>
+
+      <h2 id="iit-generations">The three generations of IITs</h2>
+      <p>
+        During JoSAA choice filling, candidates generally balance institute reputation against branch preference across the three tiers of IITs:
+      </p>
+      <ol>
+        <li>
+          <strong>1st Generation IITs (The "Old Seven"):</strong> IIT Bombay, IIT Delhi, IIT Madras, IIT Kanpur, IIT Kharagpur,
+          IIT Roorkee, and IIT Guwahati. Renowned for massive alumni networks, cutting-edge research infrastructure, and top-tier global placements.
+        </li>
+        <li>
+          <strong>2nd Generation IITs (Established 2008–2009):</strong> IIT Hyderabad, IIT (BHU) Varanasi, IIT (ISM) Dhanbad,
+          IIT Indore, IIT Gandhinagar, IIT Ropar, IIT Patna, IIT Bhubaneswar, and IIT Mandi. Many of these (especially IIT Hyderabad and IIT BHU) rival older IITs in modern curriculum and high placement figures.
+        </li>
+        <li>
+          <strong>3rd Generation IITs (Established 2015–2016):</strong> IIT Jodhpur, IIT Tirupati, IIT Palakkad, IIT Goa,
+          IIT Dharwad, IIT Bhilai, and IIT Jammu. Newer campuses with rapidly expanding infrastructure, offering accessible entry cutoffs for core branches.
+        </li>
+      </ol>
+
+      <h2 id="rank-expectations">What kind of branches to expect at your rank</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">JEE Advanced CRL Rank</th>
+              <th scope="col">Typical Opportunities (General Category)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="num">Top 1,000</td>
+              <td>Computer Science and Electrical Engineering at the Old 7 IITs (Bombay, Delhi, Madras, Kanpur, Kharagpur).</td>
+            </tr>
+            <tr>
+              <td class="num">1,000 – 3,500</td>
+              <td>CSE and AI at top 2nd-gen IITs (Hyderabad, BHU, Indore), or Mechanical and Aerospace at top older IITs.</td>
+            </tr>
+            <tr>
+              <td class="num">3,500 – 7,500</td>
+              <td>Electrical and Mechanical at 2nd-gen IITs; Civil, Chemical, and Metallurgy at older IITs.</td>
+            </tr>
+            <tr>
+              <td class="num">7,500 – 12,000</td>
+              <td>CSE and Electronics at newer 3rd-gen IITs (Tirupati, Palakkad, Jammu); Core branches at mid-tier IITs.</td>
+            </tr>
+            <tr>
+              <td class="num">12,000 – 17,500</td>
+              <td>Civil, Chemical, Mining, and Materials Engineering at 3rd-gen IITs and 5-year integrated BS/MS programs.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="female-pool">Female-only supernumerary seats in IITs</h2>
+      <p>
+        In accordance with the directive of the Ministry of Education, all IITs offer supernumerary seats for female candidates
+        to ensure women make up at least 20% of undergraduate cohorts.
+      </p>
+      <p>
+        These are <strong>additive seats</strong> that do not reduce the number of gender-neutral seats. Cutoffs for the female-only
+        pool are often 20% to 40% more relaxed than the corresponding gender-neutral opening and closing ranks.
+      </p>
+
+      <h2 id="class-12-eligibility">Class 12 performance rules for IITs</h2>
+      <p>
+        Qualifying in JEE Advanced alone does not guarantee admission. You must satisfy <strong>Annexure 2(a)</strong> of the JoSAA Business Rules:
+      </p>
+      <ol>
+        <li>Passed Class 12 with Physics, Chemistry, and Mathematics from a single examination board.</li>
+        <li>Secured at least <strong>75% aggregate marks</strong> (65% for SC, ST, and PwD candidates), <strong>OR</strong> placed within the <strong>category-wise top 20 percentile</strong> of your respective board examination.</li>
+      </ol>
+      <p>
+        Make sure you have all required paperwork prepared beforehand by reviewing our
+        <a href="/guides/documents-required-for-josaa-reporting">JoSAA Documents Checklist</a> and
+        <a href="/guides/josaa-undertaking-form">JoSAA Undertaking Form Guide</a>.
+      </p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <FAQ items={faqs} />
+
+      <AuthorBox
+        {updated}
+        sources={[
+          { label: 'the JEE Advanced official portal', href: OFFICIAL.jeeAdv },
+          { label: 'the JoSAA counselling portal', href: OFFICIAL.josaa },
+        ]}
+      />
+    </div>
+  </div>
+</Base>

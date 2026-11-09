@@ -39,7 +39,11 @@ function writeParams(input: PredictInput) {
   window.history.replaceState(null, '', `${window.location.pathname}?${p.toString()}`);
 }
 
-const Predictor: FunctionalComponent = () => {
+interface PredictorProps {
+  exam?: 'main' | 'advanced';
+}
+
+const Predictor: FunctionalComponent<PredictorProps> = ({ exam = 'main' }) => {
   const [rank, setRank] = useState('');
   const [category, setCategory] = useState<Category>('OPEN');
   const [gender, setGender] = useState<Gender>('neutral');
@@ -54,7 +58,7 @@ const Predictor: FunctionalComponent = () => {
   async function run(input: PredictInput) {
     setLoading(true);
     try {
-      const rows = await loadCutoffs();
+      const rows = await loadCutoffs(exam);
       const found = predict(input, rows);
       setResults(found);
       setSubmitted(input);
@@ -114,20 +118,24 @@ const Predictor: FunctionalComponent = () => {
       <form onSubmit={onSubmit} noValidate>
         <div class="form-grid">
           <div class="field">
-            <label for="rank">JEE Main rank</label>
+            <label for="rank">{exam === 'advanced' ? 'JEE Advanced rank' : 'JEE Main rank'}</label>
             <input
               id="rank"
               name="rank"
               type="text"
               inputMode="numeric"
               autoComplete="off"
-              placeholder="e.g. 25000"
+              placeholder={exam === 'advanced' ? 'e.g. 3500' : 'e.g. 25000'}
               value={rank}
               onInput={(e) => setRank((e.target as HTMLInputElement).value)}
               aria-describedby="rank-hint rank-error"
               aria-invalid={error ? 'true' : undefined}
             />
-            <p class="hint" id="rank-hint">CRL rank if you are in the General category, otherwise your category rank.</p>
+            <p class="hint" id="rank-hint">
+              {exam === 'advanced'
+                ? 'CRL rank for General, or your category rank for EWS, OBC-NCL, SC, or ST.'
+                : 'CRL rank if you are in the General category, otherwise your category rank.'}
+            </p>
             {error && <p class="error" id="rank-error" role="alert">{error}</p>}
           </div>
           <div class="field">
@@ -143,16 +151,23 @@ const Predictor: FunctionalComponent = () => {
               <option value="female">Female</option>
             </select>
           </div>
-          <div class="field">
-            <label for="state">Home state (state of Class 12)</label>
-            <select id="state" value={state} onChange={(e) => setState((e.target as HTMLSelectElement).value)}>
-              <option value="">Select state</option>
-              {STATES.map((s) => <option value={s}>{s}</option>)}
-            </select>
-          </div>
+          {exam === 'main' ? (
+            <div class="field">
+              <label for="state">Home state (state of Class 12)</label>
+              <select id="state" value={state} onChange={(e) => setState((e.target as HTMLSelectElement).value)}>
+                <option value="">Select state</option>
+                {STATES.map((s) => <option value={s}>{s}</option>)}
+              </select>
+            </div>
+          ) : (
+            <div class="field">
+              <label for="quota-info">Seat Quota</label>
+              <input id="quota-info" type="text" value="All India (AI) Quota — No Home State in IITs" disabled style={{ background: 'var(--color-surface)', opacity: 0.8 }} />
+            </div>
+          )}
         </div>
         <div class="form-actions">
-          <button type="submit" class="btn" disabled={loading}>{loading ? 'Predicting…' : 'Predict my colleges'}</button>
+          <button type="submit" class="btn" disabled={loading}>{loading ? 'Predicting…' : exam === 'advanced' ? 'Predict my IITs' : 'Predict my colleges'}</button>
         </div>
       </form>
 
@@ -233,7 +248,9 @@ const Predictor: FunctionalComponent = () => {
       <p class="disclaimer">
         Results are estimates based on past closing ranks, not an official allotment. Cutoffs change every year with
         seats, exam difficulty and the number of candidates. Always confirm on the official JoSAA website.
-        This tool covers NITs, IIITs and GFTIs; IITs admit through JEE Advanced.
+        {exam === 'advanced'
+          ? ' This tool evaluates the 23 IITs based on JEE Advanced ranks (All India quota).'
+          : ' This tool covers NITs, IIITs and GFTIs; IITs admit through JEE Advanced.'}
       </p>
     </section>
   );

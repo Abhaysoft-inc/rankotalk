@@ -13,6 +13,7 @@ export const SITE = {
 export const OFFICIAL = {
   josaa: 'https://josaa.nic.in',
   jeeMain: 'https://jeemain.nta.nic.in',
+  jeeAdv: 'https://jeeadv.ac.in',
   csab: 'https://csab.nic.in',
 } as const;
 
@@ -54,9 +55,10 @@ export const NAV: (NavLink | NavMenu)[] = [
     label: 'Tools',
     groups: [
       {
-        label: 'JEE Main',
+        label: 'JEE & JoSAA',
         links: [
-          { href: '/jee-main-college-predictor', label: 'College Predictor' },
+          { href: '/jee-main-college-predictor', label: 'JEE Main College Predictor' },
+          { href: '/jee-advanced-college-predictor', label: 'JEE Advanced (IIT) Predictor' },
           { href: '/jee-main-percentile-vs-rank', label: 'Percentile vs Rank Calculator' },
         ],
       },

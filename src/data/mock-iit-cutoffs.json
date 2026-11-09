@@ -1,0 +1,6212 @@
+[
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 65
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 11
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 27
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 6
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 3
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 180
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 31
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 76
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 15
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 8
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 420
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 71
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 176
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 36
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 19
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 1700
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 289
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 714
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 145
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 77
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 4300
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 731
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1806
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 366
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 194
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 2800
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 476
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1176
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 238
+  },
+  {
+    "institute": "IIT Bombay",
+    "slug": "iit-bombay",
+    "type": "IIT",
+    "state": "Maharashtra",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 126
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 115
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 20
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 48
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 10
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 5
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 350
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 60
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 147
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 30
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 16
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 580
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 99
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 244
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 49
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 26
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 1850
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 315
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 777
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 157
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 83
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 4450
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 757
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1869
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 378
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 200
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 2950
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 502
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1239
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 251
+  },
+  {
+    "institute": "IIT Delhi",
+    "slug": "iit-delhi",
+    "type": "IIT",
+    "state": "Delhi",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 133
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 160
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 27
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 67
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 14
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 7
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 450
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 77
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 189
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 38
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 20
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 800
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 136
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 336
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 68
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 36
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 2500
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 425
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1050
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 213
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 113
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 5600
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 952
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2352
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 476
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 252
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 4300
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 731
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1806
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 366
+  },
+  {
+    "institute": "IIT Madras",
+    "slug": "iit-madras",
+    "type": "IIT",
+    "state": "Tamil Nadu",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 194
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 240
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 41
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 101
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 20
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 11
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 600
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 102
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 252
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 51
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 27
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 1300
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 221
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 546
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 111
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 59
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 3100
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 527
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1302
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 264
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 140
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 6200
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1054
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2604
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 527
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 279
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 4400
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 748
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1848
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 374
+  },
+  {
+    "institute": "IIT Kanpur",
+    "slug": "iit-kanpur",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 198
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 415
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 71
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 174
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 35
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 19
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 1500
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 255
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 630
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 128
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 68
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 2100
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 357
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 882
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 179
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 95
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 3800
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 646
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1596
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 323
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 171
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 7400
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1258
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3108
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 629
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 333
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 5200
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 884
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2184
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 442
+  },
+  {
+    "institute": "IIT Kharagpur",
+    "slug": "iit-kharagpur",
+    "type": "IIT",
+    "state": "West Bengal",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 234
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 480
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 82
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 202
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 41
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 22
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 1800
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 306
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 756
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 153
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 81
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 2600
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 442
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1092
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 221
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 117
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 4600
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 782
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1932
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 391
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 207
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 7900
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1343
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3318
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 672
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 356
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 6100
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1037
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2562
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 519
+  },
+  {
+    "institute": "IIT Roorkee",
+    "slug": "iit-roorkee",
+    "type": "IIT",
+    "state": "Uttarakhand",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 275
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 650
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 111
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 273
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 55
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 29
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 2200
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 374
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 924
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 187
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 99
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 3500
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 595
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1470
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 298
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 158
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 5400
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 918
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2268
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 459
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 243
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 8900
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1513
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3738
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 757
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 401
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 7200
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1224
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3024
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 612
+  },
+  {
+    "institute": "IIT Guwahati",
+    "slug": "iit-guwahati",
+    "type": "IIT",
+    "state": "Assam",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 324
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 670
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 114
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 281
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 57
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 30
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 2100
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 357
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 882
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 179
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 95
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 2800
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 476
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1176
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 238
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 126
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 5800
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 986
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2436
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 493
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 261
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 9500
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1615
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3990
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 808
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 428
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 7500
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1275
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3150
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 638
+  },
+  {
+    "institute": "IIT Hyderabad",
+    "slug": "iit-hyderabad",
+    "type": "IIT",
+    "state": "Telangana",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 338
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 1050
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 179
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 441
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 89
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 47
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 3200
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 544
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1344
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 272
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 144
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 4300
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 731
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1806
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 366
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 194
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 7100
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1207
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2982
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 604
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 320
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 10200
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1734
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4284
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 867
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 459
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 8800
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1496
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3696
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 748
+  },
+  {
+    "institute": "IIT (BHU) Varanasi",
+    "slug": "iit-bhu",
+    "type": "IIT",
+    "state": "Uttar Pradesh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 396
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 1400
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 238
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 588
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 119
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 63
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 3800
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 646
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1596
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 323
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 171
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 4100
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 697
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1722
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 349
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 185
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 7900
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1343
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3318
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 672
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 356
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 11500
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 1955
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4830
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 978
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 518
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 9600
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1632
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4032
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 816
+  },
+  {
+    "institute": "IIT Indore",
+    "slug": "iit-indore",
+    "type": "IIT",
+    "state": "Madhya Pradesh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 432
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 1600
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 272
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 672
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 136
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 72
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 4100
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 697
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1722
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 349
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 185
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 4500
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 765
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1890
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 383
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 203
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 8200
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1394
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3444
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 697
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 369
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 12000
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2040
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5040
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1020
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 540
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 10200
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1734
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4284
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 867
+  },
+  {
+    "institute": "IIT Gandhinagar",
+    "slug": "iit-gandhinagar",
+    "type": "IIT",
+    "state": "Gujarat",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 459
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 1900
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 323
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 798
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 162
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 86
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 4700
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 799
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1974
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 400
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 212
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 5500
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 935
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2310
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 468
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 248
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 9200
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1564
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3864
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 782
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 414
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 13000
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2210
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5460
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1105
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 585
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 11000
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 1870
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4620
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 935
+  },
+  {
+    "institute": "IIT Ropar",
+    "slug": "iit-ropar",
+    "type": "IIT",
+    "state": "Punjab",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 495
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 2900
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 493
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1218
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 247
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 131
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 5800
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 986
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2436
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 493
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 261
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 7000
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1190
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2940
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 595
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 315
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 10500
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1785
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4410
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 893
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 473
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 13900
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2363
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5838
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1182
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 626
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 12200
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2074
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5124
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1037
+  },
+  {
+    "institute": "IIT Patna",
+    "slug": "iit-patna",
+    "type": "IIT",
+    "state": "Bihar",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 549
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 3100
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 527
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1302
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 264
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 140
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 6100
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1037
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2562
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 519
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 275
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 7500
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1275
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3150
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 638
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 338
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 11200
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1904
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4704
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 952
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 504
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 14500
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2465
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6090
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1233
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 653
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 12800
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2176
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5376
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1088
+  },
+  {
+    "institute": "IIT Mandi",
+    "slug": "iit-mandi",
+    "type": "IIT",
+    "state": "Himachal Pradesh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 576
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 3200
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 544
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1344
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 272
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 144
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 6200
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1054
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2604
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 527
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 279
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 7200
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1224
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3024
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 612
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 324
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 10800
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1836
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4536
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 918
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 486
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 14200
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2414
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5964
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1207
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 639
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 12500
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2125
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5250
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1063
+  },
+  {
+    "institute": "IIT Bhubaneswar",
+    "slug": "iit-bhubaneswar",
+    "type": "IIT",
+    "state": "Odisha",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 563
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 2800
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 476
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1176
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 238
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 126
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 5500
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 935
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2310
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 468
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 248
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 6900
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1173
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2898
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 587
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 311
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 10400
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1768
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4368
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 884
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 468
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 14000
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2380
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5880
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1190
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 630
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 12100
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2057
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5082
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1029
+  },
+  {
+    "institute": "IIT Jodhpur",
+    "slug": "iit-jodhpur",
+    "type": "IIT",
+    "state": "Rajasthan",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 545
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 3300
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 561
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1386
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 281
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 149
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 6500
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1105
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2730
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 553
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 293
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 7800
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1326
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3276
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 663
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 351
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 11500
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 1955
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4830
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 978
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 518
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 14800
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2516
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6216
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1258
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 666
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 13200
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2244
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5544
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1122
+  },
+  {
+    "institute": "IIT (ISM) Dhanbad",
+    "slug": "iit-ism-dhanbad",
+    "type": "IIT",
+    "state": "Jharkhand",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 594
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 4500
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 765
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 1890
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 383
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 203
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 7800
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1326
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3276
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 663
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 351
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 9100
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1547
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3822
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 774
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 410
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 13200
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2244
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5544
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1122
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 594
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 16200
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2754
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6804
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1377
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 729
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 14500
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2465
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6090
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1233
+  },
+  {
+    "institute": "IIT Tirupati",
+    "slug": "iit-tirupati",
+    "type": "IIT",
+    "state": "Andhra Pradesh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 653
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 5200
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 884
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2184
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 442
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 234
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 8500
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1445
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3570
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 723
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 383
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 9800
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1666
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4116
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 833
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 441
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 13800
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2346
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5796
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1173
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 621
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 16700
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2839
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 7014
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1420
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 752
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 15100
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2567
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6342
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1284
+  },
+  {
+    "institute": "IIT Palakkad",
+    "slug": "iit-palakkad",
+    "type": "IIT",
+    "state": "Kerala",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 680
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 4900
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 833
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2058
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 417
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 221
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 8200
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1394
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3444
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 697
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 369
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 9400
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1598
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3948
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 799
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 423
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 13500
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2295
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 5670
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1148
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 608
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 16400
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2788
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6888
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1394
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 738
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 14800
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2516
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6216
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1258
+  },
+  {
+    "institute": "IIT Goa",
+    "slug": "iit-goa",
+    "type": "IIT",
+    "state": "Goa",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 666
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 5600
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 952
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2352
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 476
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 252
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 9100
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1547
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3822
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 774
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 410
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 10500
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1785
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4410
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 893
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 473
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 14500
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2465
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6090
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1233
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 653
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 17100
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2907
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 7182
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1454
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 770
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 15600
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2652
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6552
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1326
+  },
+  {
+    "institute": "IIT Dharwad",
+    "slug": "iit-dharwad",
+    "type": "IIT",
+    "state": "Karnataka",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 702
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 5900
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 1003
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2478
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 502
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 266
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 9400
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1598
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3948
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 799
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 423
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 11000
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1870
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4620
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 935
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 495
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 14900
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2533
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6258
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1267
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 671
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 17400
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2958
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 7308
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1479
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 783
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 15900
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2703
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6678
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1352
+  },
+  {
+    "institute": "IIT Bhilai",
+    "slug": "iit-bhilai",
+    "type": "IIT",
+    "state": "Chhattisgarh",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 716
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Computer Science and Engineering",
+    "category": "OPEN",
+    "closingRank": 5800
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Computer Science and Engineering",
+    "category": "EWS",
+    "closingRank": 986
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Computer Science and Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 2436
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Computer Science and Engineering",
+    "category": "SC",
+    "closingRank": 493
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Computer Science and Engineering",
+    "category": "ST",
+    "closingRank": 261
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OPEN",
+    "closingRank": 9300
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical and Electronics Engineering",
+    "category": "EWS",
+    "closingRank": 1581
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical and Electronics Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 3906
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical and Electronics Engineering",
+    "category": "SC",
+    "closingRank": 791
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical and Electronics Engineering",
+    "category": "ST",
+    "closingRank": 419
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical Engineering",
+    "category": "OPEN",
+    "closingRank": 10800
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical Engineering",
+    "category": "EWS",
+    "closingRank": 1836
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 4536
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical Engineering",
+    "category": "SC",
+    "closingRank": 918
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Electrical Engineering",
+    "category": "ST",
+    "closingRank": 486
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Mechanical Engineering",
+    "category": "OPEN",
+    "closingRank": 14800
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Mechanical Engineering",
+    "category": "EWS",
+    "closingRank": 2516
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Mechanical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6216
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Mechanical Engineering",
+    "category": "SC",
+    "closingRank": 1258
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Mechanical Engineering",
+    "category": "ST",
+    "closingRank": 666
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Civil Engineering",
+    "category": "OPEN",
+    "closingRank": 17200
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Civil Engineering",
+    "category": "EWS",
+    "closingRank": 2924
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Civil Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 7224
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Civil Engineering",
+    "category": "SC",
+    "closingRank": 1462
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Civil Engineering",
+    "category": "ST",
+    "closingRank": 774
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Chemical Engineering",
+    "category": "OPEN",
+    "closingRank": 15800
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Chemical Engineering",
+    "category": "EWS",
+    "closingRank": 2686
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Chemical Engineering",
+    "category": "OBC-NCL",
+    "closingRank": 6636
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Chemical Engineering",
+    "category": "SC",
+    "closingRank": 1343
+  },
+  {
+    "institute": "IIT Jammu",
+    "slug": "iit-jammu",
+    "type": "IIT",
+    "state": "Jammu and Kashmir",
+    "program": "Chemical Engineering",
+    "category": "ST",
+    "closingRank": 711
+  }
+]

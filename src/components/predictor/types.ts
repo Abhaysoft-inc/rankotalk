@@ -3,7 +3,7 @@ export type Category = (typeof CATEGORIES)[number];
 
 export type Gender = 'neutral' | 'female';
 export type Chance = 'safe' | 'moderate' | 'reach';
-export type InstituteType = 'NIT' | 'IIIT' | 'GFTI';
+export type InstituteType = 'NIT' | 'IIIT' | 'GFTI' | 'IIT';
 
 /** One past closing rank for one seat group. This is the contract the real data source must match. */
 export interface CutoffRow {
@@ -22,6 +22,7 @@ export interface PredictInput {
   category: Category;
   gender: Gender;
   homeState?: string;
+  exam?: 'main' | 'advanced';
 }
 
 export interface PredictResult extends CutoffRow {

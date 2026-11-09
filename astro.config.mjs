@@ -10,6 +10,8 @@ const CONTENT_UPDATED = '2026-10-31';
 // Pages edited after CONTENT_UPDATED. Add a page here when its content changes, so lastmod stays accurate.
 const LASTMOD = {
   '/jee-main-percentile-vs-rank': '2026-11-09',
+  '/jee-main-college-predictor': '2026-11-09',
+  '/jee-advanced-college-predictor': '2026-11-09',
   '/guides/documents-required-for-josaa-reporting': '2026-11-09',
   '/guides/josaa-undertaking-form': '2026-11-09',
   '/guides': '2026-11-09',

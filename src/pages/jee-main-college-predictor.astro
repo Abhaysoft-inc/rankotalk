@@ -7,54 +7,60 @@ import Predictor from '../components/predictor/Predictor.tsx';
 import { SITE, OFFICIAL } from '../config';
 import { faqLd, webAppLd } from '../lib/schema';
 
-const title = `JEE Main College Predictor ${SITE.examYear} by Rank | ${SITE.name}`;
+const title = `JEE Main & JEE College Predictor ${SITE.examYear} by Rank | ${SITE.name}`;
 const description =
-  'Free JEE Main college predictor. Enter your rank, category, gender and home state to see the NITs, IIITs and GFTIs you can target. No login needed.';
+  'Free JEE Main and JEE college predictor tool. Enter your rank, category, and state to find eligible NITs, IIITs, and GFTIs. No login or phone number needed.';
+
+const updated = '2026-11-09';
 
 const faqs = [
   {
     q: 'What is a JEE Main college predictor?',
-    a: 'A JEE Main college predictor is a tool that compares your JEE Main rank with the closing ranks of past JoSAA counselling rounds and lists the NITs, IIITs and GFTIs, with branches, where you have a realistic chance of getting a seat.',
+    a: 'A JEE Main college predictor is an admissions tool that compares your JEE Main rank against official opening and closing ranks from past JoSAA counselling rounds. It shows you which NITs, IIITs, and GFTIs (along with specific branches) you can realistically target.',
   },
   {
-    q: 'How accurate is a JEE Main college predictor?',
-    a: 'It is a good starting point for a shortlist, not a promise. Closing ranks move every year with the number of seats, the difficulty of the paper and the number of candidates, and they also change from round to round. Treat Safe options as likely, Moderate as roughly even, and Reach as a stretch.',
+    q: 'Which site gives an accurate JEE Main college predictor?',
+    a: 'An accurate predictor must rely strictly on official JoSAA closing ranks rather than promotional algorithms. RankOTalk evaluates your rank against authentic JoSAA opening and closing rank data without artificial score manipulation, sponsored private college bias, or mandatory phone-number gates.',
   },
   {
-    q: 'Do I need to log in or share my email to use this predictor?',
-    a: 'No. You can use the RankOtalk predictor without creating an account and without sharing your email address or phone number.',
+    q: 'Do I need to log in or share my phone number to use this predictor?',
+    a: 'No. Unlike other portals that gate results behind mobile numbers and email addresses to sell leads to coaching centers and private universities, RankOTalk is 100% open and free. No login, sign-up, or phone number is ever required.',
+  },
+  {
+    q: 'Does this college predictor show private colleges?',
+    a: 'No. This predictor evaluates only government colleges admitted through JoSAA: all 31 National Institutes of Technology (NITs), 26 Indian Institutes of Information Technology (IIITs), and Government Funded Technical Institutes (GFTIs). It contains zero sponsored private university promotions.',
+  },
+  {
+    q: 'How accurate is this JEE college predictor?',
+    a: 'It provides a reliable baseline for building your JoSAA choice list. While cutoffs shift slightly each year based on seat additions, question paper difficulty, and applicant volume, closing ranks across top government institutes remain remarkably consistent. Options marked Safe represent very high probability, Moderate are realistic targets, and Reach are stretch choices.',
   },
   {
     q: 'Which rank should I enter, CRL or category rank?',
-    a: 'If you are in the General (OPEN) category, enter your Common Rank List (CRL) rank. If you are in EWS, OBC-NCL, SC or ST, enter your category rank to see seats reserved for your category. You can also run the predictor again as OPEN with your CRL rank, because reserved-category candidates are considered for OPEN seats too.',
+    a: 'If you belong to the General (OPEN) category, enter your Common Rank List (CRL) rank. If you belong to EWS, OBC-NCL, SC, or ST, enter your category rank to see reserved seats. You should also run the tool a second time with your CRL rank under OPEN, because reserved-category candidates are also eligible for OPEN seats.',
   },
   {
     q: 'Does this predictor include IITs?',
-    a: 'No. IIT admission is based on JEE Advanced rank, not JEE Main rank. This predictor covers the institutes that admit through JEE Main rank in JoSAA counselling: NITs, IIITs and GFTIs.',
+    a: 'No. Admission to the 23 IITs is determined exclusively by JEE Advanced rank, not JEE Main. For IIT admissions, use our dedicated JEE Advanced College Predictor.',
   },
   {
     q: 'What is the difference between Home State and Other State quota?',
-    a: 'At NITs, roughly half the seats are kept for candidates from the NIT’s own state (Home State quota) and the rest are open to everyone else (Other State quota). Home State candidates compete for fewer, separate seats, so the closing ranks are usually more relaxed for them. Select your home state in the predictor to include this.',
+    a: 'At NITs, 50% of seats are reserved for candidates who passed Class 12 in the state where that NIT is located (Home State quota). The remaining 50% are open to all applicants nationwide (Other State quota). Home State cutoffs are generally more relaxed. Select your home state in the tool to see HS-specific eligibility.',
   },
   {
-    q: 'Can I get an NIT with 85 percentile in JEE Main?',
-    a: 'If about 12 lakh candidates appear, an 85 percentile works out to a rank near 1,80,000, which is beyond the closing rank for most NIT programs in the General category. Reserved-category candidates, Home State quota candidates and later counselling rounds can open up options, so check the predictor with your category rank and state.',
+    q: 'Can I get an NIT with an 85 percentile in JEE Main?',
+    a: 'With ~13 to 15 lakh candidates appearing, an 85 percentile corresponds to an All India Rank near 1,95,000 to 2,25,000. In the OPEN category, this is beyond the closing rank for core NIT programs. However, for reserved categories (SC/ST/PwD) or Home State candidates at newer NITs (especially in the North East), seats may still be obtainable. Enter your category rank in the predictor to check exact matches.',
   },
   {
-    q: 'How does the predictor decide Safe, Moderate and Reach?',
-    a: 'For each seat group, the predictor compares your rank with the past closing rank. If your rank is comfortably better than that closing rank the seat is marked Safe, if it is close the seat is Moderate, and if it is slightly worse the seat is marked Reach. Seats that are far out of reach are not shown.',
+    q: 'How does the predictor decide Safe, Moderate, and Reach?',
+    a: 'The tool compares your rank against the latest JoSAA closing rank for that institute, branch, category, and quota. Ranks comfortably inside past closing ranks are classified as Safe, ranks within a tight margin are Moderate, and choices slightly above past cutoffs are Reach.',
   },
   {
     q: 'Does the predictor work for female-only seats?',
-    a: 'Yes. Choose Female as your gender and the results take the female-only seat pool into account along with gender-neutral seats.',
+    a: 'Yes. Select Female under Gender to automatically evaluate both gender-neutral seats and the supernumerary female-only seat pool created by JoSAA.',
   },
   {
-    q: 'Can I use the predictor before my result with an expected rank?',
-    a: 'Yes. If you only have a percentile, convert it to an expected rank with the percentile to rank calculator and enter that rank. Keep in mind that the final rank can differ from the estimate.',
-  },
-  {
-    q: 'When does JoSAA counselling start?',
-    a: 'JoSAA counselling has usually started in June, after the JEE Advanced results. The exact schedule is announced on the official JoSAA website, so check josaa.nic.in for current dates.',
+    q: 'Can I use the predictor before results are out using my expected percentile?',
+    a: 'Yes. Convert your expected percentile into an estimated All India Rank using our JEE Main Percentile vs Rank Calculator, then enter that estimated rank into this predictor.',
   },
 ];
 
@@ -85,10 +91,10 @@ const toc = [
     <Breadcrumbs items={[{ name: 'Home', href: '/' }, { name: 'JEE Main College Predictor', href: '/jee-main-college-predictor' }]} />
 
     <div class="page-head">
-      <h1>JEE Main College Predictor {SITE.examYear}</h1>
+      <h1>JEE Main & JEE College Predictor {SITE.examYear}</h1>
       <p class="lead">
-        Enter your JEE Main rank, category, gender and home state to see which NITs, IIITs and GFTIs you can realistically
-        target in JoSAA counselling. It is free, and you do not need to log in or share your email.
+        Enter your JEE Main CRL or category rank, gender, and home state to see which NITs, IIITs, and GFTIs you can realistically
+        target in JoSAA counselling. 100% free, no login or phone number required, and zero sponsored college bias.
       </p>
     </div>
 
@@ -103,6 +109,10 @@ const toc = [
       </nav>
 
       <h2 id="how-it-works">How this JEE Main college predictor works</h2>
+      <p>
+        Whether you are searching for a <strong>JEE Main college predictor</strong> or a general <strong>JEE college predictor</strong> for JoSAA engineering seats,
+        this tool compares your All India Rank (AIR) directly against verified opening and closing ranks from prior JoSAA counselling rounds.
+      </p>
       <p>
         Every year, JoSAA publishes the opening and closing rank of each seat group after every counselling round.
         The closing rank is the rank of the last candidate who was allotted that seat. If your rank is better than
@@ -267,7 +277,7 @@ const toc = [
       <h2 id="faq">Frequently asked questions</h2>
       <FAQ items={faqs} />
 
-      <AuthorBox updated={SITE.hubUpdated} />
+      <AuthorBox {updated} />
     </div>
   </div>
 </Base>
