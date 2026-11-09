@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 // Set SITE_URL in the host's build settings once the real domain is chosen.
-const site = process.env.SITE_URL ?? 'https://rankotalk.xyz';
+const site = process.env.SITE_URL ?? 'https://rankotalk.vercel.app';
 const CONTENT_UPDATED = '2026-10-31';
 // Pages edited after CONTENT_UPDATED. Add a page here when its content changes, so lastmod stays accurate.
 const LASTMOD = {
