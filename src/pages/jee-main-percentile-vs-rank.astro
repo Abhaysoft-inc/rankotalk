@@ -12,6 +12,7 @@ const title = `JEE Main Percentile vs Rank Calculator | ${SITE.name}`;
 const description =
   'Convert your JEE Main percentile to an expected rank, or a rank to a percentile. Includes the formula, a worked example and a reference table.';
 
+const updated = '2026-11-09';
 const EXAMPLE_CANDIDATES = 1_200_000;
 const percentiles = [99.9, 99.5, 99, 98, 97, 95, 90, 85, 80, 75, 70];
 const rows = percentiles.map((p) => ({ p, rank: percentileToRank(p, EXAMPLE_CANDIDATES) }));
@@ -20,6 +21,14 @@ const faqs = [
   {
     q: 'How do I convert JEE Main percentile to rank?',
     a: 'Subtract your percentile from 100, divide by 100, and multiply by the number of candidates who appeared. For example, 97.5 percentile with 12,00,000 candidates gives (100 − 97.5) ÷ 100 × 12,00,000 = 30,000.',
+  },
+  {
+    q: 'How many marks do I need for the 99th percentile in JEE Main?',
+    a: 'It depends on your shift. In Session 2 of 2026, NTA said the raw marks needed for the 99th percentile ranged from 165 in the toughest shift to 196 in the easiest, according to the Free Press Journal. NTA does not publish a fixed marks-to-percentile table.',
+  },
+  {
+    q: 'Does the shift I get affect my rank?',
+    a: 'NTA says it does not. Percentiles are calculated within each shift and then merged by normalisation into one merit list, so a tough shift and an easy shift are compared fairly.',
   },
   {
     q: 'Is the JEE Main NTA score the same as marks?',
@@ -31,7 +40,7 @@ const faqs = [
   },
   {
     q: 'How many candidates should I enter?',
-    a: 'Use the number of candidates who appeared, as given in the NTA result notice for your year. If you do not have it yet, 12,00,000 is a round figure you can use to get a rough idea.',
+    a: 'Use the number of unique candidates who appeared for Paper 1 (B.E./B.Tech) as given in NTA’s result press release. In 2026, 13,04,653 candidates appeared for Paper 1 in Session 1, and about 15,38,468 candidates appeared across both sessions combined. If you do not have the final figures yet, 13,00,000 to 15,00,000 gives a close estimate, while 12,00,000 serves as a traditional round baseline.',
   },
   {
     q: 'Can I use the estimated rank in the college predictor?',
@@ -105,6 +114,30 @@ const jsonLd = [
         </table>
       </div>
 
+      <h2 id="marks-vs-percentile">JEE Main marks vs percentile: why there is no fixed table</h2>
+      <p>
+        Many websites publish a table that says a certain number of marks equals a certain percentile. We could not find an
+        official marks-to-percentile table from NTA, and a single table cannot be right, because percentile is worked out
+        inside each shift, not across the whole exam.
+      </p>
+      <p>
+        NTA made this point itself in a note on X on 21 April 2026 about the nine shifts of Session 2 (2 to 8 April)., the raw marks needed for the
+        99th percentile ranged from <strong>165 in the toughest shift to 196 in the easiest</strong>, a gap of 31 marks out of
+        300. The gaps for the 98th and 97th percentiles were 27 and 26 marks.
+      </p>
+      <p>
+        So the same marks can be a different percentile depending on your shift. NTA says percentiles are calculated within each
+        shift and then merged by normalisation into one merit list, and that the shift you were allotted has no bearing on your
+        rank. Any marks vs percentile table you see, on coaching sites or in search summaries, is an expert estimate for a
+        typical paper. Use it for a rough idea only.
+      </p>
+      <h3>What to do instead</h3>
+      <ol>
+        <li>Wait for your NTA score card. Your percentile is the official number, and your rank follows from it.</li>
+        <li>Convert that percentile to an expected rank with the calculator above.</li>
+        <li>Take the rank to the <a href="/jee-main-college-predictor">college predictor</a>.</li>
+      </ol>
+
       <h2 id="differences">Why your official rank can be different</h2>
       <ul>
         <li><strong>Tie-breaks.</strong> Many candidates share the same score, and NTA uses its tie-break rules to separate them.</li>
@@ -126,7 +159,9 @@ const jsonLd = [
       <h2 id="faq">Frequently asked questions</h2>
       <FAQ items={faqs} />
 
-      <AuthorBox updated={SITE.hubUpdated} />
+      <AuthorBox
+        {updated}
+      />
     </div>
   </div>
 </Base>

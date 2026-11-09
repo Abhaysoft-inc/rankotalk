@@ -7,6 +7,13 @@ import tailwindcss from '@tailwindcss/vite';
 // Set SITE_URL in the host's build settings once the real domain is chosen.
 const site = process.env.SITE_URL ?? 'https://rankotalk.com';
 const CONTENT_UPDATED = '2026-10-31';
+// Pages edited after CONTENT_UPDATED. Add a page here when its content changes, so lastmod stays accurate.
+const LASTMOD = {
+  '/jee-main-percentile-vs-rank': '2026-11-09',
+  '/guides/documents-required-for-josaa-reporting': '2026-11-09',
+  '/guides/josaa-undertaking-form': '2026-11-09',
+  '/guides': '2026-11-09',
+};
 
 export default defineConfig({
   site,
@@ -19,7 +26,7 @@ export default defineConfig({
     // Update CONTENT_UPDATED whenever page content changes. An accurate lastmod helps crawlers; a false one is ignored.
     sitemap({
       filter: (page) => !page.endsWith('/404'),
-      serialize: (item) => ({ ...item, lastmod: CONTENT_UPDATED }),
+      serialize: (item) => ({ ...item, lastmod: LASTMOD[new URL(item.url).pathname] ?? CONTENT_UPDATED }),
     }),
   ],
   vite: { plugins: [tailwindcss()] },
