@@ -7,7 +7,7 @@ export const SITE = {
   // Shown as the "last updated" date on the hub page.
   hubUpdated: '2026-10-31',
   // Confirm before launch (see docs/LAUNCH_CHECKLIST.md).
-  email: 'contact@rankotalk.com',
+  email: 'contact@rankotalk.in',
   authorName: 'Abhay Vishwakarma',} as const;
 
 export const OFFICIAL = {

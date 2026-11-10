@@ -1,6 +1,6 @@
 # RankOtalk: project instructions
 
-RankOtalk is a college counselling website built for an SEO growth competition. The goal is to rank on Google for target keywords with useful tools and real content. It is live at https://rankotalk.vercel.app (Vercel; a push to `main` deploys).
+RankOtalk is a college counselling website built for an SEO growth competition. The goal is to rank on Google for target keywords with useful tools and real content. The domain is https://rankotalk.in (bought 2026-11-10; moving from the old https://rankotalk.vercel.app, which must 301 to it; see the domain move section in `docs/LAUNCH_CHECKLIST.md`). Hosted on Vercel; a push to `main` deploys.
 
 The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are in `docs/LAUNCH_CHECKLIST.md`. `docs/competitors_who_are_ranking_currently_content.md` holds competitor research, for reference only. `docs/DATA_SOURCES.md` explains where and how to get the official data for every tool (JoSAA, NBEMS FMGE, College Scorecard, WDOMS and NMC, exchange rates), with checks and a refresh calendar. Follow it for any data work.
 
@@ -85,7 +85,7 @@ The full plan is in `docs/IMPLEMENTATION_PLAN.md` and the pre-launch gates are i
 
 - Connect the real JEE predictor backend before promoting the site.
 - Fact-check the guides and the hub page against the current JoSAA bulletin.
-- Confirm the contact email (`contact@rankotalk.com` is a placeholder) and a custom domain.
+- Finish the domain move to rankotalk.in (checklist in `docs/LAUNCH_CHECKLIST.md`), and set up a mailbox for `contact@rankotalk.in` (free options: registrar forwarding, Cloudflare Email Routing, Zoho free plan).
 
 ## Commands
 

@@ -9,8 +9,23 @@ Nothing should go live until every item in **Gate** is done.
 - [ ] **Update `/methodology`** so it matches the real data source and year.
 - [ ] **Fact-check every page** against the current JoSAA information bulletin and the NTA JEE Main bulletin: the four guides, the hub page, the percentile page, the FAQ answers and the rank-band table. The copy describes the general pattern of recent years. Confirm the quota split, certificate rules, number of rounds and the Freeze/Float/Slide rules.
 - [ ] **Authors.** The site says "Written by the RankOtalk editorial team". Add real names and short bios (a named author and reviewer helps E-E-A-T), and update `src/components/AuthorBox.astro`.
-- [ ] **Contact email.** `src/config.ts` has `contact@rankotalk.com`. Make sure this mailbox exists, or change it.
-- [ ] **Domain.** Buy it, then set `SITE_URL` in Vercel (Project, Settings, Environment Variables). The fallback in `astro.config.mjs` is `https://rankotalk.com`.
+- [ ] **Contact email.** `src/config.ts` has `contact@rankotalk.in`. Make sure this mailbox exists. Free options: forwarding at the registrar, Cloudflare Email Routing, or Zoho Mail's free plan.
+- [ ] **Domain.** `rankotalk.in` is bought. Follow "Domain move" below. The fallback in `astro.config.mjs` is `https://rankotalk.in`.
+
+## Domain move: rankotalk.vercel.app to rankotalk.in
+
+Do these in order. All of them are free.
+
+1. **Vercel → Project → Settings → Domains → Add `rankotalk.in`.** Also add `www.rankotalk.in` and set it to redirect to the bare domain.
+2. **DNS at your registrar:** add exactly the records Vercel shows for the domain. Wait until Vercel shows "Valid Configuration" (minutes to hours).
+3. **Vercel → Settings → Environment Variables:** set `SITE_URL=https://rankotalk.in`. Also update `PUBLIC_GOOGLE_SITE_VERIFICATION` if you verify the new property with a meta tag (see step 6). Redeploy.
+4. **Redirect the old address.** In Domains, edit `rankotalk.vercel.app` and choose "Redirect to Another Domain" → `rankotalk.in`, permanent. Keep it on for as long as you can; Google suggests at least 180 days.
+5. **Check the live site:** every old URL should land on the same path at `rankotalk.in`; "view source" on 3 pages should show `<link rel="canonical">` with `rankotalk.in`; open `/sitemap-index.xml`, `/robots.txt` and `/llms.txt` on the new domain.
+6. **Google Search Console:** add a new property for `rankotalk.in`. A Domain property verified with a DNS TXT record needs no code change. Submit `https://rankotalk.in/sitemap-index.xml`, then use URL Inspection → Request indexing on the home page and the main tool pages. Keep the old property to watch the redirects. The Change of Address tool is meant for moves between domains you own, so it is not needed here; the redirects do the job.
+7. **Bing Webmaster Tools:** add `rankotalk.in` (import from Search Console) and submit the sitemap.
+8. **IndexNow:** after the deploy, run `SITE_URL=https://rankotalk.in npm run indexnow`.
+9. **Update every link you control:** social profiles, Quora and Reddit answers, and anything you have shared.
+10. **Expect a few weeks of movement.** Rankings can dip briefly while Google moves the pages. The favicon and the site name are re-evaluated for the new domain, so "Vercel" should stop appearing in the site name once Google processes the home page.
 
 ## Vercel
 
